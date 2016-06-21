@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-sweb-app-capable" content="yes"><meta name="keywords" content="前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准"><meta name="description" content="百度前端技术学院"><link rel="shortcut icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="bookmark" href="/asset/img/favicon.ico" type="image/x-icon"><title>百度前端技术学院</title>
+<link href="//ife.baidu.com/asset/css/task/taskDetail_58a113b2.css" rel="stylesheet">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d422e3cabaaaa7445e54622b97472bab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+</head><body class="result-op"><div id="viewport"><header ><nav class="navbar navbar-default container ife-header"><div class="row"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-brand ife-logo"><a href="//ife.baidu.com"><img src="/asset/img/logo.png"></a></div></div><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/task/all">任务</a></li><li><a href="/note/all">学习笔记</a></li><li><a href="/statistic/index">统计</a></li><li class="user-dropdown"><a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=ebafb21040691d3b4e46550702f2d5d8&display=page">登录</a></li></ul></div></div></nav></header>
+<main class="container task-detail-page"><div class="breadcrumb nav-title"><span class="active">任务五十一：多功能相册<span class="task-done-tip text-danger">【已经结束】</span></span></div><div class="main container-fluid"><div class="row task-detail-wrap"><div class="task-detail col-md-9"><div><dl>
+	<dt>面向人群：</dt>
+	<dd>有一定的JavaScript基础</dd>
+	<dt>难度：</dt>
+	<dd>难</dd>
+</dl>
+
+<h3>重要说明</h3>
+<p>百度前端技术学院的课程任务是由百度前端工程师专为对前端不同掌握程度的同学设计。我们尽力保证课程内容的质量以及学习难度的合理性，但即使如此，真正决定课程效果的，还是你的每一次思考和实践。</p>
+<p>课程多数题目的解决方案都不是唯一的，这和我们在实际工作中的情况也是一致的。因此，我们的要求不仅仅是实现设计稿的效果，更是要多去思考不同的解决方案，评估不同方案的优劣，然后使用在该场景下最优雅的方式去实现。那些最终没有被我们采纳的方案，同样也可以帮助我们学到很多知识。所以，我们列出的参考资料未必是实现需求所必须的。有的时候，实现题目的要求很简单，甚至参考资料里就有，但是背后的思考和亲手去实践却是任务最关键的一部分。在学习这些资料时，要多思考，多提问，多质疑。相信通过和小伙伴们的交流，能让你的学习事半功倍。</p>
+
+<p>此外，有些组的实现方式是用 JavaScript 写了很多 <code>xxx.style.xxx = ...</code> 这样的形式。虽然也能实现效果，但是我们尽可能希望样式由 CSS 控制，所以更好的做法是在 CSS 文件中设置样式，用 JavaScript 给特定的元素设置类名。我们可以看到，很多和界面相关的第三方库都提供了 CSS 文件，和 JavaScript 一起作为库的一部分，比如 <a href="https://github.com/yesmeck/jquery-jsonview/tree/master/dist">jquery-jsonview</a>。<br>
+最后，拼图布局应该根据用户给的图片数自动决定采用的布局，而不是在调用时输入参数。</p>
+<h3 id="_4"><a name="user-content-_4" href="#_4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>本阶段任务</h3>
+
+
+<h3>任务目的</h3>
+<ul>
+	<li>在第四阶段，需要实现一个第三方 JavaScript 库，用于制作布局灵活的响应式多功能相册，可以应用于图片的全屏浏览、幻灯片播放、分组分页等场景。</li>
+</ul>
+
+<h3>任务描述</h3>
+<h4>第三阶段回顾</h4>
+<ul>
+	<li>在第三阶段，我们看到部分组提交的作业已经比较成型了，但是还是有一些共性的问题，这里说明一下。<br>
+首先，在裁剪图片的时候，应该将图片放在水平和垂直方向上的中间（除非你提供接口让用户设置裁剪时以什么方向对齐）。以下图的两张图布局为例，被裁剪掉的距离应该是平均分布在上下左右的，具体比例可以自己设计，但是有些组完全裁去右边部分的做法显然是不妥的。其他布局也是类似的，请大家自行检查长宽比不同的图像应用在相册时的效果。</li>
+	<li><img alt="" src="http://7xrp04.com1.z0.glb.clouddn.com/task_4_51_1.png"></li>
+	<li>此外，有些组的实现方式是用 JavaScript 写了很多 <code>xxx.style.xxx = ...</code> 这样的形式。虽然也能实现效果，但是我们尽可能希望样式由 CSS 控制，所以更好的做法是在 CSS 文件中设置样式，用 JavaScript 给特定的元素设置类名。我们可以看到，很多和界面相关的第三方库都提供了 CSS 文件，和 JavaScript 一起作为库的一部分，比如 <a href="https://github.com/yesmeck/jquery-jsonview/tree/master/dist">jquery-jsonview</a>。<br>
+最后，拼图布局应该根据用户给的图片数自动决定采用的布局，而不是在调用时输入参数。</li>
+</ul>
+<h4>第四阶段描述</h4>
+<ul>
+	<li>这一阶段，每个组需要完成一个相册第三方库的完整功能。根据我们提供的 JavaScript 框架，结合上一阶段的实现，实现我们给出的 API。</li>
+	<li>
+		<h5>简单</h5>
+		<ul>
+			<li>理解文末给出的 API（学习资料<a target="_blank" href="http://usejsdoc.org/">JSDoc</a>），并且在自己写代码的时候适当添加注释</li>
+			<li>实现 API</li>
+			<li>编写调用该库的例子，尽可能完整地测试功能性</li>
+		</ul>
+	</li>
+	<li>
+		<h5>中等</h5>
+		<ul>
+			<li>分析现有其他相册库的功能，设计并实现更多布局（如全屏、网格、幻灯片等），以及拼图布局下更多的可能性</li>
+			<li>设计并实现更多功能（如动画、交互等）</li>
+		</ul>
+	</li>
+	<li>
+		<h5>困难</h5>
+		<ul>
+			<li>学习比较现有主流 JavaScript 测试框架：<a target="_blank" href="http://jasmine.github.io/">Jasmine</a>、<a target="_blank" href="https://mochajs.org/">Mocha</a>、<a target="_blank" href="https://qunitjs.com/">QUnit</a> 等，选择合适的工具，尽可能高覆盖地测试你门的库</li>
+			<li>如果觉得你们的项目值得在真实世界使用，可以考虑在 GitHub 上单独建一个项目以后长期维护，编写 ReadMe、文档、测试、例子等等，或许可以是你们第一个被别人使用的开源项目（如果决定这么做，请在提交作业时，给出该地址，我们会长期关注）</li>
+		</ul>
+	</li>
+	<li>以下是我们给出的框架，如果在实现过程中发现不合理或者认为有 bug 的地方，都可以自行适当调整。</li>
+	<li>
+<pre>
+<code class="js">
+(function (window) {
+
+    // 由于是第三方库，我们使用严格模式，尽可能发现潜在问题
+    'use strict';
+
+
+
+    function IfeAlbum() {
+
+        // 布局的枚举类型
+        this.LAYOUT = {
+            PUZZLE: 1,    // 拼图布局
+            WATERFALL: 2, // 瀑布布局
+            BARREL: 3     // 木桶布局
+        };
+
+        // 公有变量可以写在这里
+        // this.xxx = ...
+
+    }
+
+    // 私有变量可以写在这里
+    // var xxx = ...
+
+
+
+    /************* 以下是本库提供的公有方法 *************/
+
+
+
+    /**
+     * 初始化并设置相册
+     * 当相册原本包含图片时，该方法会替换原有图片
+     * @param {(string|string[])} image  一张图片的 URL 或多张图片 URL 组成的数组
+     * @param {object}            option 配置项
+     */
+    IfeAlbum.prototype.setImage = function (image, option) {
+        
+        if (typeof image === 'string') {
+            // 包装成数组处理
+            this.setImage([image]);
+            return;
+        }
+
+        // 你的实现
+
+    };
+
+
+
+    /**
+     * 获取相册所有图像对应的 DOM 元素
+     * 可以不是 <img>，而是更外层的元素
+     * @return {HTMLElement[]} 相册所有图像对应的 DOM 元素组成的数组
+     */
+    IfeAlbum.prototype.getImageDomElements = function() {
+        
+    };
+
+
+
+    /**
+     * 向相册添加图片
+     * 在拼图布局下，根据图片数量重新计算布局方式；其他布局下向尾部追加图片
+     * @param {(string|string[])} image 一张图片的 URL 或多张图片 URL 组成的数组
+     */
+    IfeAlbum.prototype.addImage = function (image) {
+
+    };
+
+
+
+    /**
+     * 移除相册中的图片
+     * @param  {(HTMLElement|HTMLElement[])} image 需要移除的图片
+     * @return {boolean} 是否全部移除成功
+     */
+    IfeAlbum.prototype.removeImage = function (image) {
+
+    };
+
+
+
+    /**
+     * 设置相册的布局
+     * @param {number} layout 布局值，IfeAlbum.LAYOUT 中的值
+     */
+    IfeAlbum.prototype.setLayout = function (layout) {
+
+    };
+
+
+
+    /**
+     * 获取相册的布局
+     * @return {number} 布局枚举类型的值
+     */
+    IfeAlbum.prototype.getLayout = function() {
+
+    };
+
+
+
+    /**
+     * 设置图片之间的间距
+     * 注意这个值仅代表图片间的间距，不应直接用于图片的 margin 属性，如左上角图的左边和上边应该紧贴相册的左边和上边
+     * 相册本身的 padding 始终是 0，用户想修改相册外框的空白需要自己设置相框元素的 padding
+     * @param {number}  x  图片之间的横向间距
+     * @param {number} [y] 图片之间的纵向间距，如果是 undefined 则等同于 x
+     */
+    IfeAlbum.prototype.setGutter = function (x, y) {
+
+    };
+
+
+
+    /**
+     * 允许点击图片时全屏浏览图片
+     */
+    IfeAlbum.prototype.enableFullscreen = function () {
+
+    };
+
+
+
+    /**
+     * 禁止点击图片时全屏浏览图片
+     */
+    IfeAlbum.prototype.disableFullscreen = function () {
+
+    };
+
+
+
+    /**
+     * 获取点击图片时全屏浏览图片是否被允许
+     * @return {boolean} 是否允许全屏浏览
+     */
+    IfeAlbum.prototype.isFullscreenEnabled = function () {
+
+    };
+
+
+    /**
+     * 设置木桶模式每行图片数的上下限
+     * @param {number} min 最少图片数（含）
+     * @param {number} max 最多图片数（含）
+     */
+    IfeAlbum.prototype.setBarrelBin = function (min, max) {
+
+        // 注意异常情况的处理，做一个健壮的库
+        if (min === undefined || max === undefined || min > max) {
+            console.error('...');
+            return;
+        }
+
+        // 你的实现
+
+    };
+
+
+
+    /**
+     * 获取木桶模式每行图片数的上限
+     * @return {number} 最多图片数（含）
+     */
+    IfeAlbum.prototype.getBarrelBinMax = function () {
+
+    };
+
+
+
+    /**
+     * 获取木桶模式每行图片数的下限
+     * @return {number} 最少图片数（含）
+     */
+    IfeAlbum.prototype.getBarrelBinMin = function () {
+
+    };
+
+
+
+    /**
+     * 设置木桶模式每行高度的上下限，单位像素
+     * @param {number} min 最小高度
+     * @param {number} max 最大高度
+     */
+    IfeAlbum.prototype.setBarrelHeight = function (min, max) {
+
+    };
+
+
+
+    /**
+     * 获取木桶模式每行高度的上限
+     * @return {number} 最多图片数（含）
+     */
+    IfeAlbum.prototype.getBarrelHeightMax = function () {
+
+    };
+
+
+
+    /**
+     * 获取木桶模式每行高度的下限
+     * @return {number} 最少图片数（含）
+     */
+    IfeAlbum.prototype.getBarrelHeightMin = function () {
+
+    };
+
+
+
+    // 你想增加的其他接口
+
+
+
+    /************* 以上是本库提供的公有方法 *************/
+
+
+
+    // 实例化
+    if (typeof window.ifeAlbum === 'undefined') {
+        // 只有当未初始化时才实例化
+        window.ifeAlbum = new IfeAlbum();
+    }
+
+}(window));
+</code>
+</pre>		
+
+	</li>
+</ul>
+
+<h3>任务注意事项</h3>
+<ul>
+	<li>上面描述中的示意图仅为需求描述参考，不作为实现的设计参考</li>
+	<li>上面的需求描述中存在与真实产品合理性的差异，本任务以技术学习为主，忽略产品设计上的问题</li>
+	<li>请注意代码风格的整齐、优雅</li>
+	<li>代码中含有必要的注释</li>
+	<li>可以合理使用第三方框架、类库</li>
+</ul>
+
+<h3>任务协作建议</h3>
+<ul>
+	<li>团队内进行头脑风暴，共同讨论和设计游戏新要素</li>
+	<li>如果是各自工作，可以按以下方式：
+		<ul>
+			<li>团队集中讨论，明确题目要求，保证队伍各自对题目要求认知一致</li>
+			<li>各自完成任务实践</li>
+			<li>交叉互相Review其他人的代码，建议每个人至少看一个同组队友的代码</li>
+			<li>相互讨论，最后合成一份组内最佳代码进行提交</li>
+		</ul>
+	</li>
+	<li>如果是分工工作，可以按照难度来划分任务</li>
+</ul></div><h3>已提交任务的团队（<em class="submit-group-count">-</em>）</h3><div class="submit-group-info"><div class="loading-wrap">'<span class="loading glyphicon glyphicon-refresh" aria-hidden="true"></span></div></div></div><div class="task-overview col-md-3"><div class="task-basic"><p class=""><span class="key">发布时间：</span><span class="value">04-18</span></p><p class=""><span class="key">截止时间：</span><span class="value">05-22 23:59</span></p><p class=""><span class="key">难度：</span><span class="value">困难</span></p><p class=""><span class="key">平均得分：</span><span class="value">8.88</span></p></div><div class="submit-rank-wrap"><h3>任务得分排名</h3><div class="submit-group-rank"><div class="loading-wrap">'<span class="loading glyphicon glyphicon-refresh" aria-hidden="true"></span></div></div></div></div></div></div><div id="submit-task-dlg" class="modal fade"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title">提交任务</h4></div><div class="modal-body"><form class="container-fluid submit-task-form"><div class="form-group row"><label for="task-code-url" class="col-xs-12 col-sm-3">代码地址</label><div class="controls col-xs-12 col-sm-9"><input type="text" value="" placeholder="完成的代码地址，比如 Github" class="form-control" id="task-code-url" name="url" required></div></div><div class="form-group row"><label for="task-demo-url" class="col-xs-12 col-sm-3">demo 地址</label><div class="controls col-xs-12 col-sm-9"><input type="text" value="" placeholder="在线可访问 demo 地址，选填" class="form-control" id="task-demo-url" name="demo"></div></div><div class="form-group row"><label for="task-submit-descr" class="col-xs-12 col-sm-3">描述</label><div class="controls col-xs-12 col-sm-9"><textarea placeholder="完成的任务描述，选填" class="form-control" id="task-submit-descr" name="descr"></textarea></div></div></form></div><div class="modal-footer"><span class="submit-tip"></span><button type="button" class="btn btn-default" data-dismiss="modal">关闭</button><button type="button" data-loading-text="提交中..." class="btn btn-primary save-btn">提交</button></div></div></div></div></main>
+<footer><p><span class="contact">微信公众号：baidu_ife</span><span class="contact">微博：<a target="_blank" href="http://weibo.com/u/5568860641?topnav=1&wvr=6&topsug=1">Baidu前端技术学院</a></span></p><p class="friend-link"><span class="note">友情链接</span><a target="_blank" title="百度EFE前端团队" href="http://efe.baidu.com">百度EFE</a><a target="_blank" href="http://voice.baidu.com">百度语音搜索</a><a href="http://www.chuanke.com/" target="_blank">百度传课</a><a target="_blank" href="http://campus.baidu.com/">百度校园</a><a target="_blank" href="http://talent.baidu.com/external/baidu/campus.html">百度校园招聘</a></p><p><span class="copyright-text"><span>©2016&nbsp;Baidu&nbsp;</span><a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span></span></p></footer></div><script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-4/esl.js"></script><script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script><script src="../../dep/EpicEditor-v0.2.2/js/epiceditor.js"></script><script>require.config({'baseUrl': '//ife.baidu.com/asset','paths': { 'bootstrapvalidator': '../dep/bootstrapvalidator/dist/js/bootstrapValidator' },'waitSeconds': 5,'packages': [{'name': 'etpl','location': '../dep/etpl/3.1.0/asset','main': 'main'},{'name': 'bootstrap','location': '../dep/bootstrap-3.3.5/js'},{'name': 'select2','location': '../dep/select2/dist/js','main': 'select2'},{'name': 'jquery-bootpag','location': '../dep/jquery-bootpag/lib','main': 'jquery.bootpag'},{'name': 'bootstrap-slider','location': '../dep/bootstrap-slider/asset/js','main': 'bootstrap-slider'},{'name': 'saber-emitter','location': '../dep/saber-emitter/1.0.0/asset','main': 'emitter'},{'name': 'marked','location': '../dep/marked/lib','main': 'marked'}],'shim': {'bootstrap/button': ['jquery'],'bootstrap/modal': ['jquery'],'bootstrap/collapse': ['jquery'],'bootstrap/dropdown': ['jquery'],'bootstrap/tab': ['jquery'],'bootstrapvalidator': ['jquery'],'jquery-bootpag/jquery.bootpag': ['jquery']}});</script>
+<script>
+    require(['task/taskDetail_80a5f8d9'], function (app) {
+        app.init({"login":0,"taskUrl":"\/task\/all","noteUrl":"\/note\/all","statisticUrl":"\/statistic\/index","loginUrl":"https:\/\/openapi.baidu.com\/oauth\/2.0\/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=ebafb21040691d3b4e46550702f2d5d8&display=page"}, {
+            taskId: 51
+        });
+    });
+</script>
+</body>
+</html>
