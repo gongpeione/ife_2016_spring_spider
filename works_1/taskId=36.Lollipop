@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-sweb-app-capable" content="yes"><meta name="keywords" content="前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准"><meta name="description" content="百度前端技术学院"><link rel="shortcut icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="bookmark" href="/asset/img/favicon.ico" type="image/x-icon"><title>百度前端技术学院</title>
+<link href="//ife.baidu.com/asset/css/review/reviewDetail_ad83eb8a.css" rel="stylesheet">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d422e3cabaaaa7445e54622b97472bab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+</head><body class="result-op"><div id="viewport"><header ><nav class="navbar navbar-default container ife-header"><div class="row"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-brand ife-logo"><a href="//ife.baidu.com"><img src="/asset/img/logo.png"></a></div></div><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/task/all">任务</a></li><li><a href="/note/all">学习笔记</a></li><li><a href="/statistic/index">统计</a></li><li class="user-dropdown"><a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=2279091fb00d78483f21f0cf90d08bef&display=page">登录</a></li></ul></div></div></nav></header>
+<main class="container review-detail-page"><div class="breadcrumb nav-title"><span class="active">任务三十六：听指令的小方块（四）（<a href="/task/detail?taskId=36">查看详情</a>）</span></div><div class="main"><div class="submit-group-info"><h4>团队：<a href="/group/profile?groupId=1690" target="_blank">Lollipop</a></h4><p class="submit-basic"><span class="submit-time"><a href="/user/profile?userId=4340">谢贤博</a>&nbsp;更新于<em>03-24 20:43</em></span><span class="review-num">已经有<em>1</em>人 review</span><span class="score">平均得分：<em>8</em></span></p><p>代码地址：<a href="https://github.com/ExboCooope/IFE_BOX" target="_blank">https://github.com/ExboCooope/IFE_BOX</a></p><p>demo：<a href="http://exbocooope.github.io/IFE_BOX/" target="_blank">http://exbocooope.github.io/IFE_BOX/</a></p><p class="submit-descr">因为开发环境的限制（无网），没有做多少兼容性测试，目前能保证Chrome系浏览器下能够体验全部功能<br />
+<br />
+简单说一下设计吧<br />
+整个系统采用的动态刷新，指令系统分为两层，全局指令池发送指令给方块，方块执行指令后返回给指令池执行下一条指令。有一些指令AI指令会触发方块的AI指令池执行指令。整个过程在右侧（下侧）的日志中显示（出错的信息为红色）<br />
+<br />
+棋盘（?）可以动态增加或减少行列（在控制面板中调整）<br />
+棋盘上可以点击右键，在菜单中选择铺墙、传送、AI移动等指令（这个功能可以在控制面板中开关）<br />
+<br />
+指令窗口的行号，考虑到了单行指令超长导致换行的情况，在一般情况下能够正确显示行号。<br />
+指令窗口添加了自动补全功能<br />
+<br />
+控制面板中可以控制是否显示动画，可以调节动画用时，可以暂停，以及垂直同步（并没有什么效果）<br />
+<br />
+这里用到的库都是自己写的<br />
+<br />
+关于AI和寻路算法<br />
+只有一个简单的最近路线算法<br />
+另外AI运行中可以用右键放墙挡路，（也可以传送玩家方块），AI发现自己行动失败后会重新计算路径。也可以用右键菜单取消AI行动<br />
+<br />
+已知问题：右键菜单 和 自动补全 在非chrome浏览器下存在缩进时定位不准</p></div><ul class="review-result-list container-fluid"><li class="row review-result" data-id="1329"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=1304" target="_blank">锟斤拷</a><span class="time-info">review&nbsp;<span class="time">03-26 15:52</span><span class="update-time">（<a href="/user/profile?userId=3310" target="_blank">丘翔</a>&nbsp;03-26 15:52&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">8</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">实现得比较复杂，当然也完成了一些很赞的功能，值得借鉴。<br />
+<br />
+但是，性能需要进一步优化，某些部分有严重的性能问题。<br />
+<br />
+拿指令编辑器来说吧，代码行数的更新是在 InputObject.prototype.refresh 里完成的，这个函数在编辑器 keydown、input、scroll 时触发运行，首先 keydown 和 input 重复了，保留 input 就够了；其次，每次 input 都要重新刷新代码行数吗？显然不是的，只有代码行数改变的时候才需要；然后 scroll 触发刷新也是没有必要的，因为 scroll 的时候代码行数并没有改变，只是因为代码行数同步滚动的功能写在一起了，为了方便于是一起调用了，是不可取的。<br />
+<br />
+InputObject.prototype.refresh 的多次不必要调用还不是最致命的，真正影响效率的是 refresh 的实现，refresh 里有一个循环，每一行需要调用一次 $ta() 这个函数实际就是 innerHTML 的追加赋值。我们应该知道，DOM 的重新渲染是很费时的，一秒钟数次还没什么，但一秒钟上百次就可以感觉明显的卡顿了。你会发现把代码行数增加到100行以上，编辑器的编辑和滚动就已经卡得不行了。更好的做法是，html 先暂存在一个变量里，循环结束后再调用 $ta()。</span></div></li></ul><div class="review-page-wrap" data-total="1" data-page-size="10" data-page-no="1"></div></div></main>
+<footer><p><span class="contact">微信公众号：baidu_ife</span><span class="contact">微博：<a target="_blank" href="http://weibo.com/u/5568860641?topnav=1&wvr=6&topsug=1">Baidu前端技术学院</a></span></p><p class="friend-link"><span class="note">友情链接</span><a target="_blank" title="百度EFE前端团队" href="http://efe.baidu.com">百度EFE</a><a target="_blank" href="http://voice.baidu.com">百度语音搜索</a><a href="http://www.chuanke.com/" target="_blank">百度传课</a><a target="_blank" href="http://campus.baidu.com/">百度校园</a><a target="_blank" href="http://talent.baidu.com/external/baidu/campus.html">百度校园招聘</a></p><p><span class="copyright-text"><span>©2016&nbsp;Baidu&nbsp;</span><a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span></span></p></footer></div><script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-4/esl.js"></script><script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script><script src="../../dep/EpicEditor-v0.2.2/js/epiceditor.js"></script><script>require.config({'baseUrl': '//ife.baidu.com/asset','paths': { 'bootstrapvalidator': '../dep/bootstrapvalidator/dist/js/bootstrapValidator' },'waitSeconds': 5,'packages': [{'name': 'etpl','location': '../dep/etpl/3.1.0/asset','main': 'main'},{'name': 'bootstrap','location': '../dep/bootstrap-3.3.5/js'},{'name': 'select2','location': '../dep/select2/dist/js','main': 'select2'},{'name': 'jquery-bootpag','location': '../dep/jquery-bootpag/lib','main': 'jquery.bootpag'},{'name': 'bootstrap-slider','location': '../dep/bootstrap-slider/asset/js','main': 'bootstrap-slider'},{'name': 'saber-emitter','location': '../dep/saber-emitter/1.0.0/asset','main': 'emitter'},{'name': 'marked','location': '../dep/marked/lib','main': 'marked'}],'shim': {'bootstrap/button': ['jquery'],'bootstrap/modal': ['jquery'],'bootstrap/collapse': ['jquery'],'bootstrap/dropdown': ['jquery'],'bootstrap/tab': ['jquery'],'bootstrapvalidator': ['jquery'],'jquery-bootpag/jquery.bootpag': ['jquery']}});</script>
+<script>
+    require(['review/reviewDetail_e5394537'], function (app) {
+        app.init({"login":0,"taskUrl":"\/task\/all","noteUrl":"\/note\/all","statisticUrl":"\/statistic\/index","loginUrl":"https:\/\/openapi.baidu.com\/oauth\/2.0\/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=2279091fb00d78483f21f0cf90d08bef&display=page"}, {
+            taskId: 36,
+            workId: 3702,
+            groupId: 1690,
+            allowAddReview: 0,
+            allowUpdateReview: 0        });
+    });
+</script>
+</body>
+</html>

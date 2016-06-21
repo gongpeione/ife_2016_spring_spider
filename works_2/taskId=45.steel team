@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-sweb-app-capable" content="yes"><meta name="keywords" content="前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准"><meta name="description" content="百度前端技术学院"><link rel="shortcut icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="bookmark" href="/asset/img/favicon.ico" type="image/x-icon"><title>百度前端技术学院</title>
+<link href="//ife.baidu.com/asset/css/review/reviewDetail_ad83eb8a.css" rel="stylesheet">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d422e3cabaaaa7445e54622b97472bab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+</head><body class="result-op"><div id="viewport"><header ><nav class="navbar navbar-default container ife-header"><div class="row"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-brand ife-logo"><a href="//ife.baidu.com"><img src="/asset/img/logo.png"></a></div></div><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/task/all">任务</a></li><li><a href="/note/all">学习笔记</a></li><li><a href="/statistic/index">统计</a></li><li class="user-dropdown"><a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=ea1cfc55f844da995b26b2176435345d&display=page">登录</a></li></ul></div></div></nav></header>
+<main class="container review-detail-page"><div class="breadcrumb nav-title"><span class="active">任务四十五：多功能相册之木桶布局（<a href="/task/detail?taskId=45">查看详情</a>）</span></div><div class="main"><div class="submit-group-info"><h4>团队：<a href="/group/profile?groupId=495" target="_blank">steel team</a></h4><p class="submit-basic"><span class="submit-time"><a href="/user/profile?userId=1110">欧阳湘粤</a>&nbsp;更新于<em>04-19 14:43</em></span><span class="review-num">已经有<em>2</em>人 review</span><span class="score">平均得分：<em>5</em></span></p><p>代码地址：<a href="https://github.com/steelteam/baidu-ife/tree/master/task2/demo45" target="_blank">https://github.com/steelteam/baidu-ife/tree/master/task2/demo45</a></p><p>demo：<a href="http://numerhero.github.io/assets/download/ife/demo45/index.html" target="_blank">http://numerhero.github.io/assets/download/ife/demo45/index.html</a></p><p class="submit-descr">核心算法还是抄袭了丘大神的，说一说这个任务的我所收获的经验吧<br />
+<br />
+① 图片加载，可以使用Promise.all 当全部加载完成后再 append 进入DOM 这样就不会有卡顿的问题<br />
+<br />
+② 每一个包裹图片的盒子使用 display:inline-block 而不是float:left   因为计算会出现小误差，使用浮动会使最后一个元素换行，<br />
+<br />
+使用display:inline-block 加上 nowrap 可以解决这个问题<br />
+<br />
+算法思路正如丘大神所说<br />
+<br />
+将每个下载下来的图片的 横纵比累加，当超过最小横纵比后 记录下累加的横纵比<br />
+<br />
+通过 定宽（一般都是整个屏幕的宽） * 这个总的横纵比就能获得每行的高度<br />
+<br />
+在css给img中设置 height：100%； 宽就会自动被浏览器获取<br />
+<br />
+从而实现木板布局<br />
+<br />
+也是初次学习实现，难免有很多Bug 和 不足，恳求各位指导拍砖<br />
+<br />
+个人审美差异，我没有给每个图片设置 8px的paddingLeft<br />
+<br />
+浏览请使用 最新版chrome(ff也可以，就是开头动画没做兼容)</p></div><ul class="review-result-list container-fluid"><li class="row review-result" data-id="2382"><div class="review-user clearfix"><span class="pull-left"><span class="text-success">导师</span><span class="time-info">review&nbsp;<span class="time">04-22 11:27</span><span class="update-time">（04-22 11:27&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">0</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">demo有错，只是个loading页面，我还以为你们做的是loading特效呢。。。</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=1056><p class="reply-info"><a href="/user/profile?userId=339">周天树</a>&nbsp;回复&nbsp;<span class="time">05-01 15:38</span></p><p class="reply-content">用babel编译成es5的格式吧。。。另外后来导师也一直没有修改给你的评分么？心疼你。。。</p></li><li class="reply" data-id=1026><p class="reply-info">作者<a href="/user/profile?userId=1110">欧阳湘粤</a>&nbsp;回复&nbsp;<span class="time">04-26 13:34</span></p><p class="reply-content">可能是使用了较新的es6导致，因为最近在学ES6就用了...</p></li><li class="reply" data-id=984><p class="reply-info"><a href="/user/profile?userId=339">周天树</a>&nbsp;回复&nbsp;<span class="time">04-22 15:48</span></p><p class="reply-content">没问题啊。。。Loading到100%就出页面了。。。<br />
+测试浏览器：Chrome 50.0.2661.87</p></li><li class="show-more"><button class="more-btn btn btn-link">显示全部（共<em>3</em>条评论）</button></li></ul></div></li><li class="row review-result" data-id="2346"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=203" target="_blank">前端热爱者</a><span class="time-info">review&nbsp;<span class="time">04-19 23:14</span><span class="update-time">（<a href="/user/profile?userId=517" target="_blank">吴立宁</a>&nbsp;04-23 18:47&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">10</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">向你们学习<br />
+还有,你们的图片都是来自&quot;drscdn.500px.org&quot;<br />
+这是什么网站,怎么没找到关于这个网站的介绍</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=968><p class="reply-info">作者<a href="/user/profile?userId=1110">欧阳湘粤</a>&nbsp;回复&nbsp;<span class="time">04-20 15:58</span></p><p class="reply-content">评论旁有个编辑按钮...</p></li><li class="reply" data-id=967><p class="reply-info"><a href="/user/profile?userId=517">吴立宁</a>&nbsp;回复&nbsp;<span class="time">04-20 14:10</span></p><p class="reply-content">我擦怎么打了默认分数</p></li><li class="reply" data-id=966><p class="reply-info"><a href="/user/profile?userId=3310">丘翔</a>&nbsp;回复&nbsp;<span class="time">04-20 13:22</span></p><p class="reply-content">我来解释下，图片是来自 https://500px.com/，这里调用的是我写的一个在线接口，http://gallery-server.coding.io/?source=500px&amp;page=1</p></li><li class="show-more"><button class="more-btn btn btn-link">显示全部（共<em>3</em>条评论）</button></li></ul></div></li></ul><div class="review-page-wrap" data-total="2" data-page-size="10" data-page-no="1"></div></div></main>
+<footer><p><span class="contact">微信公众号：baidu_ife</span><span class="contact">微博：<a target="_blank" href="http://weibo.com/u/5568860641?topnav=1&wvr=6&topsug=1">Baidu前端技术学院</a></span></p><p class="friend-link"><span class="note">友情链接</span><a target="_blank" title="百度EFE前端团队" href="http://efe.baidu.com">百度EFE</a><a target="_blank" href="http://voice.baidu.com">百度语音搜索</a><a href="http://www.chuanke.com/" target="_blank">百度传课</a><a target="_blank" href="http://campus.baidu.com/">百度校园</a><a target="_blank" href="http://talent.baidu.com/external/baidu/campus.html">百度校园招聘</a></p><p><span class="copyright-text"><span>©2016&nbsp;Baidu&nbsp;</span><a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span></span></p></footer></div><script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-4/esl.js"></script><script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script><script src="../../dep/EpicEditor-v0.2.2/js/epiceditor.js"></script><script>require.config({'baseUrl': '//ife.baidu.com/asset','paths': { 'bootstrapvalidator': '../dep/bootstrapvalidator/dist/js/bootstrapValidator' },'waitSeconds': 5,'packages': [{'name': 'etpl','location': '../dep/etpl/3.1.0/asset','main': 'main'},{'name': 'bootstrap','location': '../dep/bootstrap-3.3.5/js'},{'name': 'select2','location': '../dep/select2/dist/js','main': 'select2'},{'name': 'jquery-bootpag','location': '../dep/jquery-bootpag/lib','main': 'jquery.bootpag'},{'name': 'bootstrap-slider','location': '../dep/bootstrap-slider/asset/js','main': 'bootstrap-slider'},{'name': 'saber-emitter','location': '../dep/saber-emitter/1.0.0/asset','main': 'emitter'},{'name': 'marked','location': '../dep/marked/lib','main': 'marked'}],'shim': {'bootstrap/button': ['jquery'],'bootstrap/modal': ['jquery'],'bootstrap/collapse': ['jquery'],'bootstrap/dropdown': ['jquery'],'bootstrap/tab': ['jquery'],'bootstrapvalidator': ['jquery'],'jquery-bootpag/jquery.bootpag': ['jquery']}});</script>
+<script>
+    require(['review/reviewDetail_e5394537'], function (app) {
+        app.init({"login":0,"taskUrl":"\/task\/all","noteUrl":"\/note\/all","statisticUrl":"\/statistic\/index","loginUrl":"https:\/\/openapi.baidu.com\/oauth\/2.0\/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=ea1cfc55f844da995b26b2176435345d&display=page"}, {
+            taskId: 45,
+            workId: 9661,
+            groupId: 495,
+            allowAddReview: 0,
+            allowUpdateReview: 0        });
+    });
+</script>
+</body>
+</html>

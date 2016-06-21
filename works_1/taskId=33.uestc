@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-sweb-app-capable" content="yes"><meta name="keywords" content="前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准"><meta name="description" content="百度前端技术学院"><link rel="shortcut icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="bookmark" href="/asset/img/favicon.ico" type="image/x-icon"><title>百度前端技术学院</title>
+<link href="//ife.baidu.com/asset/css/review/reviewDetail_ad83eb8a.css" rel="stylesheet">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d422e3cabaaaa7445e54622b97472bab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+</head><body class="result-op"><div id="viewport"><header ><nav class="navbar navbar-default container ife-header"><div class="row"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-brand ife-logo"><a href="//ife.baidu.com"><img src="/asset/img/logo.png"></a></div></div><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/task/all">任务</a></li><li><a href="/note/all">学习笔记</a></li><li><a href="/statistic/index">统计</a></li><li class="user-dropdown"><a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=3bd39a48c9a7043b060e076d094e0fd3&display=page">登录</a></li></ul></div></div></nav></header>
+<main class="container review-detail-page"><div class="breadcrumb nav-title"><span class="active">任务三十三：听指令的小方块（一）（<a href="/task/detail?taskId=33">查看详情</a>）</span></div><div class="main"><div class="submit-group-info"><h4>团队：<a href="/group/profile?groupId=3455" target="_blank">uestc</a></h4><p class="submit-basic"><span class="submit-time"><a href="/user/profile?userId=5439">邢瀚文</a>&nbsp;更新于<em>04-13 20:59</em></span><span class="review-num">已经有<em>1</em>人 review</span><span class="score">平均得分：<em>5</em></span></p><p>代码地址：<a href="https://github.com/skidxjq/ife/tree/master/hanwen/task_33" target="_blank">https://github.com/skidxjq/ife/tree/master/hanwen/task_33</a></p><p>demo：<a href="http://222.197.183.150/ife/hanwen/task_33" target="_blank">http://222.197.183.150/ife/hanwen/task_33</a></p><p class="submit-descr">做得不好，希望可以得到提点</p></div><ul class="review-result-list container-fluid"><li class="row review-result" data-id="2388"><div class="review-user clearfix"><span class="pull-left"><span class="text-success">导师</span><span class="time-info">review&nbsp;<span class="time">04-22 14:15</span><span class="update-time">（04-22 14:15&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">5</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">1. 有不少样式是没必要的，如小块的position: absolute和td的position: relative，没有这些样式也可以正常工作<br />
+2. 在表格的边框处理上，建议让带数字的单元格都使用&lt;th&gt;，这样就可以给&lt;td&gt;加上边框，而不需要使用:nth-child等复杂的选择器<br />
+3. .css文件的*这个选择器的缩进不一致<br />
+4. 如果使用box-sizing: border-box的话，可以让小块的样式更容易写，可以自行搜索学习一下<br />
+5. 对于需要注册事件上去的元素（或者说需要在JavaScript中精确找到的元素），建议加个id通过getElementById来找，避免getElementsByClassName性能损失外加写起来麻烦<br />
+6. 在JavaScript中，判断是否到底用的是一个写死的数字，这要求棋盘的大小是固定不变的，缺少一些可扩展性。不如直接在DOM上找是不是能继续走<br />
+7. 转动小方块的逻辑太过麻烦了，不要用程序的思路去想，试着想想现实中你是怎么走的，把4个方向写在纸上，你会发现顺时针、逆时针、180度转，其实只是方向间的跳跃<br />
+<br />
+var directions = [&#039;top&#039;, &#039;right&#039;, &#039;bottom&#039;, &#039;left&#039;]; // 顺时针方向<br />
+var currentDirection = &#039;right&#039;; // 假设当前向右的<br />
+var index = directions.indexOf(currentDirection);<br />
+switch (direction) {<br />
+    case: &#039;left&#039;:<br />
+        index--; // 逆时针就是向前找一格<br />
+        break;<br />
+    case: &#039;right&#039;:<br />
+        index++; // 顺时针就是向后一格<br />
+        break;<br />
+    case: &#039;back&#039;:<br />
+        index += 2; // 180度就是跳一格<br />
+        break;<br />
+}<br />
+// 当然这样是会超出范围的，修正回来<br />
+// 可能产生的范围是-1（从0开始往前一步）到5（从3开始往后2步）<br />
+// 总的来说就是这么修正，保证是正数然后和4去做余数<br />
+index = (index + directions.length) % directions.length;<br />
+var targetDirection = directions[index];</span></div></li></ul><div class="review-page-wrap" data-total="1" data-page-size="10" data-page-no="1"></div></div></main>
+<footer><p><span class="contact">微信公众号：baidu_ife</span><span class="contact">微博：<a target="_blank" href="http://weibo.com/u/5568860641?topnav=1&wvr=6&topsug=1">Baidu前端技术学院</a></span></p><p class="friend-link"><span class="note">友情链接</span><a target="_blank" title="百度EFE前端团队" href="http://efe.baidu.com">百度EFE</a><a target="_blank" href="http://voice.baidu.com">百度语音搜索</a><a href="http://www.chuanke.com/" target="_blank">百度传课</a><a target="_blank" href="http://campus.baidu.com/">百度校园</a><a target="_blank" href="http://talent.baidu.com/external/baidu/campus.html">百度校园招聘</a></p><p><span class="copyright-text"><span>©2016&nbsp;Baidu&nbsp;</span><a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span></span></p></footer></div><script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-4/esl.js"></script><script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script><script src="../../dep/EpicEditor-v0.2.2/js/epiceditor.js"></script><script>require.config({'baseUrl': '//ife.baidu.com/asset','paths': { 'bootstrapvalidator': '../dep/bootstrapvalidator/dist/js/bootstrapValidator' },'waitSeconds': 5,'packages': [{'name': 'etpl','location': '../dep/etpl/3.1.0/asset','main': 'main'},{'name': 'bootstrap','location': '../dep/bootstrap-3.3.5/js'},{'name': 'select2','location': '../dep/select2/dist/js','main': 'select2'},{'name': 'jquery-bootpag','location': '../dep/jquery-bootpag/lib','main': 'jquery.bootpag'},{'name': 'bootstrap-slider','location': '../dep/bootstrap-slider/asset/js','main': 'bootstrap-slider'},{'name': 'saber-emitter','location': '../dep/saber-emitter/1.0.0/asset','main': 'emitter'},{'name': 'marked','location': '../dep/marked/lib','main': 'marked'}],'shim': {'bootstrap/button': ['jquery'],'bootstrap/modal': ['jquery'],'bootstrap/collapse': ['jquery'],'bootstrap/dropdown': ['jquery'],'bootstrap/tab': ['jquery'],'bootstrapvalidator': ['jquery'],'jquery-bootpag/jquery.bootpag': ['jquery']}});</script>
+<script>
+    require(['review/reviewDetail_e5394537'], function (app) {
+        app.init({"login":0,"taskUrl":"\/task\/all","noteUrl":"\/note\/all","statisticUrl":"\/statistic\/index","loginUrl":"https:\/\/openapi.baidu.com\/oauth\/2.0\/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=3bd39a48c9a7043b060e076d094e0fd3&display=page"}, {
+            taskId: 33,
+            workId: 9145,
+            groupId: 3455,
+            allowAddReview: 0,
+            allowUpdateReview: 0        });
+    });
+</script>
+</body>
+</html>

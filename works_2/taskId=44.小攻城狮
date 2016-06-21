@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-sweb-app-capable" content="yes"><meta name="keywords" content="前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准"><meta name="description" content="百度前端技术学院"><link rel="shortcut icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="bookmark" href="/asset/img/favicon.ico" type="image/x-icon"><title>百度前端技术学院</title>
+<link href="//ife.baidu.com/asset/css/review/reviewDetail_ad83eb8a.css" rel="stylesheet">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d422e3cabaaaa7445e54622b97472bab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+</head><body class="result-op"><div id="viewport"><header ><nav class="navbar navbar-default container ife-header"><div class="row"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-brand ife-logo"><a href="//ife.baidu.com"><img src="/asset/img/logo.png"></a></div></div><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/task/all">任务</a></li><li><a href="/note/all">学习笔记</a></li><li><a href="/statistic/index">统计</a></li><li class="user-dropdown"><a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=73dd17d2a8f877fde30511403fce5ae9&display=page">登录</a></li></ul></div></div></nav></header>
+<main class="container review-detail-page"><div class="breadcrumb nav-title"><span class="active">任务四十四：多功能相册之瀑布布局（<a href="/task/detail?taskId=44">查看详情</a>）</span></div><div class="main"><div class="submit-group-info"><h4>团队：<a href="/group/profile?groupId=2158" target="_blank">小攻城狮</a></h4><p class="submit-basic"><span class="submit-time"><a href="/user/profile?userId=5737">连立麟</a>&nbsp;更新于<em>05-01 09:10</em></span><span class="review-num">已经有<em>1</em>人 review</span><span class="score">平均得分：<em>5</em></span></p><p>代码地址：<a href="https://github.com/lianlilin/Task044Demo" target="_blank">https://github.com/lianlilin/Task044Demo</a></p><p>demo：<a href="http://lianlilin.github.io/Task044Demo/" target="_blank">http://lianlilin.github.io/Task044Demo/</a></p><p class="submit-descr">1.尝试封装代码，暴露了一个借口给用户。<br />
+2.图片都是我自己拍摄的~<br />
+3.感谢@嗨！贾克斯团队的@余思烨同学，给了我很多思路<br />
+4.发现了很多自己没有注意过的小细节，比如图片在li内的留白，比如magin合并问题，比如遮罩层图片实现居中方法对后续事件监听的影响等。</p></div><ul class="review-result-list container-fluid"><li class="row review-result" data-id="2537"><div class="review-user clearfix"><span class="pull-left"><span class="text-success">导师</span><span class="time-info">review&nbsp;<span class="time">05-03 11:50</span><span class="update-time">（05-03 11:50&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">5</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">### HTML<br />
+<br />
+1. 指定字符编码的 meta 应该作为 head 的第一个子元素<br />
+2. &lt;html&gt; 应该指定 lang 属性<br />
+3. link、script 标签的 type 属性冗余<br />
+4. 避免直接在 style 属性中书写样式<br />
+5. HTML 中的 JS 代码也需要遵循公认的代码规范<br />
+<br />
+### CSS<br />
+<br />
+1. 避免使用 `*` 定义样式<br />
+2. 建议 `{` 前增加一个空格<br />
+3. 避免 selector 中嵌套层次超过 3 级<br />
+<br />
+### JavaScript<br />
+<br />
+1. 建议遵循社区约定俗成的代码规范，适当增加空格或空行来提高代码可读性<br />
+2. parameter 的缩写惯用法是 param，复数 params<br />
+3. 重写 MakeFalls 的 prototype 需要修复 constructor<br />
+4. 属性及配置项 gap 的设计，应该直接使用数字，方便计算<br />
+5. 批量创建的 DOM 建议先放到 fragment，最后再一起插入 DOM tree<br />
+6. 多次操作的对象、数据，应存到本地变量再操作<br />
+7. 多次出现的 magic number 20，应该声明为常量，或者可由外部配置<br />
+8. addDrip 可以优化成 addLine，在算法上会更合理些<br />
+9. 求最短的列，可以通过每次添加图片时计算，缓存下来<br />
+10. 总体封装还不够，外部可配置性不高</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=1061><p class="reply-info">作者<a href="/user/profile?userId=5737">连立麟</a>&nbsp;回复&nbsp;<span class="time">05-03 12:07</span></p><p class="reply-content">谢谢老师，祝工作顺利</p></li></ul></div></li></ul><div class="review-page-wrap" data-total="1" data-page-size="10" data-page-no="1"></div></div></main>
+<footer><p><span class="contact">微信公众号：baidu_ife</span><span class="contact">微博：<a target="_blank" href="http://weibo.com/u/5568860641?topnav=1&wvr=6&topsug=1">Baidu前端技术学院</a></span></p><p class="friend-link"><span class="note">友情链接</span><a target="_blank" title="百度EFE前端团队" href="http://efe.baidu.com">百度EFE</a><a target="_blank" href="http://voice.baidu.com">百度语音搜索</a><a href="http://www.chuanke.com/" target="_blank">百度传课</a><a target="_blank" href="http://campus.baidu.com/">百度校园</a><a target="_blank" href="http://talent.baidu.com/external/baidu/campus.html">百度校园招聘</a></p><p><span class="copyright-text"><span>©2016&nbsp;Baidu&nbsp;</span><a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span></span></p></footer></div><script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-4/esl.js"></script><script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script><script src="../../dep/EpicEditor-v0.2.2/js/epiceditor.js"></script><script>require.config({'baseUrl': '//ife.baidu.com/asset','paths': { 'bootstrapvalidator': '../dep/bootstrapvalidator/dist/js/bootstrapValidator' },'waitSeconds': 5,'packages': [{'name': 'etpl','location': '../dep/etpl/3.1.0/asset','main': 'main'},{'name': 'bootstrap','location': '../dep/bootstrap-3.3.5/js'},{'name': 'select2','location': '../dep/select2/dist/js','main': 'select2'},{'name': 'jquery-bootpag','location': '../dep/jquery-bootpag/lib','main': 'jquery.bootpag'},{'name': 'bootstrap-slider','location': '../dep/bootstrap-slider/asset/js','main': 'bootstrap-slider'},{'name': 'saber-emitter','location': '../dep/saber-emitter/1.0.0/asset','main': 'emitter'},{'name': 'marked','location': '../dep/marked/lib','main': 'marked'}],'shim': {'bootstrap/button': ['jquery'],'bootstrap/modal': ['jquery'],'bootstrap/collapse': ['jquery'],'bootstrap/dropdown': ['jquery'],'bootstrap/tab': ['jquery'],'bootstrapvalidator': ['jquery'],'jquery-bootpag/jquery.bootpag': ['jquery']}});</script>
+<script>
+    require(['review/reviewDetail_e5394537'], function (app) {
+        app.init({"login":0,"taskUrl":"\/task\/all","noteUrl":"\/note\/all","statisticUrl":"\/statistic\/index","loginUrl":"https:\/\/openapi.baidu.com\/oauth\/2.0\/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=73dd17d2a8f877fde30511403fce5ae9&display=page"}, {
+            taskId: 44,
+            workId: 10899,
+            groupId: 2158,
+            allowAddReview: 0,
+            allowUpdateReview: 0        });
+    });
+</script>
+</body>
+</html>

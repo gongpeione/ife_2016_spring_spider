@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-sweb-app-capable" content="yes"><meta name="keywords" content="前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准"><meta name="description" content="百度前端技术学院"><link rel="shortcut icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="bookmark" href="/asset/img/favicon.ico" type="image/x-icon"><title>百度前端技术学院</title>
+<link href="//ife.baidu.com/asset/css/review/reviewDetail_ad83eb8a.css" rel="stylesheet">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d422e3cabaaaa7445e54622b97472bab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+</head><body class="result-op"><div id="viewport"><header ><nav class="navbar navbar-default container ife-header"><div class="row"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-brand ife-logo"><a href="//ife.baidu.com"><img src="/asset/img/logo.png"></a></div></div><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/task/all">任务</a></li><li><a href="/note/all">学习笔记</a></li><li><a href="/statistic/index">统计</a></li><li class="user-dropdown"><a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=9eb926caf688e68c342779507abc8a64&display=page">登录</a></li></ul></div></div></nav></header>
+<main class="container review-detail-page"><div class="breadcrumb nav-title"><span class="active">任务二十九：表单（一）单个表单项的检验（<a href="/task/detail?taskId=29">查看详情</a>）</span></div><div class="main"><div class="submit-group-info"><h4>团队：<a href="/group/profile?groupId=924" target="_blank">来自远方的他叔叔军团</a></h4><p class="submit-basic"><span class="submit-time"><a href="/user/profile?userId=4667">孙浩</a>&nbsp;更新于<em>04-09 16:53</em></span><span class="review-num">已经有<em>1</em>人 review</span><span class="score">平均得分：<em>6</em></span></p><p>代码地址：<a href="https://github.com/Tanelmer/HisUncle/tree/sunhao/ife/2016_spring/task029" target="_blank">https://github.com/Tanelmer/HisUncle/tree/sunhao/ife/2016_spring/task029</a></p><p>demo：<a href="http://icantunderstand.github.io/ife/2016_spring/task029/task029.html" target="_blank">http://icantunderstand.github.io/ife/2016_spring/task029/task029.html</a></p><p class="submit-descr">任务29</p></div><ul class="review-result-list container-fluid"><li class="row review-result" data-id="2458"><div class="review-user clearfix"><span class="pull-left"><span class="text-success">导师</span><span class="time-info">review&nbsp;<span class="time">04-25 23:21</span><span class="update-time">（04-25 23:21&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">6</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">### HTML<br />
+<br />
+1. 冗余标签较多，DIV 基本上都可以去掉<br />
+2. link、style 和 script 的 type 属性可以省略<br />
+3. 避免直接使用 style 属性定义样式<br />
+4. 表单中需要有可 submit 的按钮<br />
+5. 自闭合标签统一用 /&gt; 标记或不用（link、meta 和 input）<br />
+<br />
+### CSS<br />
+<br />
+1. 避免使用原子样式的实践，使用语义化的命名<br />
+2. 同一项目应统一颜色的取值方式，目前有颜色名称和 RGB 混用<br />
+3. 建议冒号与后面的属性值统一使用一个空格<br />
+4. input 默认表现就是 inline-block，不需要再定义<br />
+<br />
+### JS<br />
+<br />
+1. 应避免直接操作样式，使用 class<br />
+2. 计算字符字节数的功能应抽取成独立方法<br />
+3. 函数 { 前的空格统一<br />
+4. base.test_num 不严谨，在传 0 作参数调用时将得到 false<br />
+5. 封装通用的跨浏览器方法时，应优先考虑现代浏览器的 feature，再 fallback 到自己的兼容实现</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=1060><p class="reply-info"><span class="text-success">导师</span>&nbsp;回复&nbsp;<span class="time">05-03 00:25</span></p><p class="reply-content">0 的问题有很多办法可以避免，最简单的是使用 isNaN<br />
+<br />
+内嵌样式的问题，原则是建议定义 class，这是语义的一种方式，通常只有做动画效果时才在 js 中直接修改，现在随着 CSS3 的普及，这种方式也会慢慢退出舞台</p></li><li class="reply" data-id=1033><p class="reply-info">作者<a href="/user/profile?userId=4667">孙浩</a>&nbsp;回复&nbsp;<span class="time">04-27 09:51</span></p><p class="reply-content">老师 我发现您说的那个传0会false的情况了 那我是不是可以直接 param === undefined 去判断空呢  多谢老师</p></li><li class="reply" data-id=1031><p class="reply-info">作者<a href="/user/profile?userId=4667">孙浩</a>&nbsp;回复&nbsp;<span class="time">04-27 09:20</span></p><p class="reply-content">多谢老师看的这么仔细 关于style属性那个点我有一点疑问 加入页面中就这一处或者两处需要这个样式 我也需要抽离出一个class来实现这个样式吗 还是直接使用style    还是感谢老师看的这么仔细</p></li><li class="show-more"><button class="more-btn btn btn-link">显示全部（共<em>3</em>条评论）</button></li></ul></div></li></ul><div class="review-page-wrap" data-total="1" data-page-size="10" data-page-no="1"></div></div></main>
+<footer><p><span class="contact">微信公众号：baidu_ife</span><span class="contact">微博：<a target="_blank" href="http://weibo.com/u/5568860641?topnav=1&wvr=6&topsug=1">Baidu前端技术学院</a></span></p><p class="friend-link"><span class="note">友情链接</span><a target="_blank" title="百度EFE前端团队" href="http://efe.baidu.com">百度EFE</a><a target="_blank" href="http://voice.baidu.com">百度语音搜索</a><a href="http://www.chuanke.com/" target="_blank">百度传课</a><a target="_blank" href="http://campus.baidu.com/">百度校园</a><a target="_blank" href="http://talent.baidu.com/external/baidu/campus.html">百度校园招聘</a></p><p><span class="copyright-text"><span>©2016&nbsp;Baidu&nbsp;</span><a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span></span></p></footer></div><script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-4/esl.js"></script><script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script><script src="../../dep/EpicEditor-v0.2.2/js/epiceditor.js"></script><script>require.config({'baseUrl': '//ife.baidu.com/asset','paths': { 'bootstrapvalidator': '../dep/bootstrapvalidator/dist/js/bootstrapValidator' },'waitSeconds': 5,'packages': [{'name': 'etpl','location': '../dep/etpl/3.1.0/asset','main': 'main'},{'name': 'bootstrap','location': '../dep/bootstrap-3.3.5/js'},{'name': 'select2','location': '../dep/select2/dist/js','main': 'select2'},{'name': 'jquery-bootpag','location': '../dep/jquery-bootpag/lib','main': 'jquery.bootpag'},{'name': 'bootstrap-slider','location': '../dep/bootstrap-slider/asset/js','main': 'bootstrap-slider'},{'name': 'saber-emitter','location': '../dep/saber-emitter/1.0.0/asset','main': 'emitter'},{'name': 'marked','location': '../dep/marked/lib','main': 'marked'}],'shim': {'bootstrap/button': ['jquery'],'bootstrap/modal': ['jquery'],'bootstrap/collapse': ['jquery'],'bootstrap/dropdown': ['jquery'],'bootstrap/tab': ['jquery'],'bootstrapvalidator': ['jquery'],'jquery-bootpag/jquery.bootpag': ['jquery']}});</script>
+<script>
+    require(['review/reviewDetail_e5394537'], function (app) {
+        app.init({"login":0,"taskUrl":"\/task\/all","noteUrl":"\/note\/all","statisticUrl":"\/statistic\/index","loginUrl":"https:\/\/openapi.baidu.com\/oauth\/2.0\/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=9eb926caf688e68c342779507abc8a64&display=page"}, {
+            taskId: 29,
+            workId: 8640,
+            groupId: 924,
+            allowAddReview: 0,
+            allowUpdateReview: 0        });
+    });
+</script>
+</body>
+</html>

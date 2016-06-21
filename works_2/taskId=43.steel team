@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-sweb-app-capable" content="yes"><meta name="keywords" content="前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准"><meta name="description" content="百度前端技术学院"><link rel="shortcut icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="bookmark" href="/asset/img/favicon.ico" type="image/x-icon"><title>百度前端技术学院</title>
+<link href="//ife.baidu.com/asset/css/review/reviewDetail_ad83eb8a.css" rel="stylesheet">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d422e3cabaaaa7445e54622b97472bab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+</head><body class="result-op"><div id="viewport"><header ><nav class="navbar navbar-default container ife-header"><div class="row"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-brand ife-logo"><a href="//ife.baidu.com"><img src="/asset/img/logo.png"></a></div></div><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/task/all">任务</a></li><li><a href="/note/all">学习笔记</a></li><li><a href="/statistic/index">统计</a></li><li class="user-dropdown"><a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=2c63258fe7452c3b06d11491110773b3&display=page">登录</a></li></ul></div></div></nav></header>
+<main class="container review-detail-page"><div class="breadcrumb nav-title"><span class="active">任务四十三：多功能相册之拼图布局（<a href="/task/detail?taskId=43">查看详情</a>）</span></div><div class="main"><div class="submit-group-info"><h4>团队：<a href="/group/profile?groupId=495" target="_blank">steel team</a></h4><p class="submit-basic"><span class="submit-time"><a href="/user/profile?userId=1110">欧阳湘粤</a>&nbsp;更新于<em>04-18 21:04</em></span><span class="review-num">已经有<em>2</em>人 review</span><span class="score">平均得分：<em>6</em></span></p><p>代码地址：<a href="https://github.com/steelteam/baidu-ife/tree/master/task2/demo43" target="_blank">https://github.com/steelteam/baidu-ife/tree/master/task2/demo43</a></p><p>demo：<a href="http://numerhero.github.io/assets/download/ife/demo43/index.html" target="_blank">http://numerhero.github.io/assets/download/ife/demo43/index.html</a></p><p class="submit-descr">借鉴了邱大神的代码，<br />
+不过，更有补充<br />
+① 图片切割策略采用纯Css<br />
+② 使用图片懒加载<br />
+③ 使用Es6Promise加载图片 (请使用高级的浏览器)查看<br />
+④ 其他一些Es6语法<br />
+⑤ 加载动画 使用了backgound-clip: text 所以不支持火狐 （但是火狐功能支持）<br />
+<br />
+图片源都是500px这个网站，加载有些慢，review 请耐心<br />
+<br />
+不足：<br />
+没有控制好图片缩放，我只是做了background-position: center;<br />
+<br />
+我使用的chrome版本是：<br />
+Chrome/50.0.2661.75<br />
+<br />
+我使用的火狐版本是：<br />
+ Firefox/45.0</p></div><ul class="review-result-list container-fluid"><li class="row review-result" data-id="2334"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=1304" target="_blank">锟斤拷</a><span class="time-info">review&nbsp;<span class="time">04-19 11:57</span><span class="update-time">（<a href="/user/profile?userId=3310" target="_blank">丘翔</a>&nbsp;04-19 11:57&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">6</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">你的图片接口用了我的服务器。。我是不介意啦，不过可能会因为我对接口的调整而影响到你的页面，所以我建议你用另一个地址 http://gallery-server.coding.io/，或者你自己搭建一个服务器，服务端的代码在 https://github.com/qiuxiang/gallery-server。<br />
+<br />
+有个 bug 似乎没人注意到，<br />
+&#039;&lt;div class=&quot;pic-box gallery-1&quot;&gt;&lt;div class=&quot;gallery&quot; style=background-Image:url(&quot;&#039;+img[0].src+&#039;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#039;<br />
+这里双引号的使用是有问题的，style 不带引号也就算了，url 却带引号，这会让浏览器的解析出现歧义，导致我这边的 chrome 是显示不出第一张图片的。<br />
+<br />
+很多问题1楼已提到，这里讨论一些代码问题。<br />
+<br />
+M = Math,<br />
+R = Math.random,<br />
+这样的别名有什么意义呢？只是为了更短？但这样牺牲了可读性呀。<br />
+<br />
+function E() {<br />
+   throw new Error(&quot;Missing parameter&quot;);<br />
+}<br />
+封装的意义？我看这个函数作为 createPic(url=E()) 默认参数，最终用于 img.src = url，这做法也有问题呀。<br />
+<br />
+addClass，removeClass 的封装也是没必要的，因为已经有 classlist 了，具体参考 https://developer.mozilla.org/zh-CN/docs/Web/API/Element/classList。<br />
+<br />
++function () {<br />
+...<br />
+}();<br />
+几处匿名函数的使用也没有必要，内部并没有声明新的局部变量。<br />
+<br />
+我觉得很重要的一点没有做到：拼图布局封装成独立可复用的模块。</span></div></li><li class="row review-result" data-id="2333"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=562" target="_blank">嗨！贾克斯</a><span class="time-info">review&nbsp;<span class="time">04-19 10:48</span><span class="update-time">（<a href="/user/profile?userId=134" target="_blank">余思烨</a>&nbsp;04-19 10:50&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">6</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">加载动画loading很酷炫，用es6的Promise加载要点赞，用css做主要布局的思路是正确的，提点小建议：<br />
+<br />
+关于布局：其中两个布局图片的展示格式不太对，两张图片的时候，没有从三分之一宽度开始切割，三张图片和五张图片的正方形效果没又做出来，感觉在不限定每个图片具体像素的情况下纯CSS做不了正方形（希望能打脸）。<br />
+<br />
+关于思路：做任务，首先是完成需求，然后再拓展，需求的布局没有做好的情况下，还是不要先做其他额外的功能，因为这样的话思路很容易混乱，当然因人而异，这是我自己的想法，欢迎一起讨论。<br />
+<br />
+分数：最基本布局需求没有达到，所以给的分数并不高，如果改好了，我会回来再给分数的。<br />
+<br />
+另：经过你的review我又重新修改了一下代码，欢迎再去review。</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=1074><p class="reply-info"><a href="/user/profile?userId=3367">刘彬德</a>&nbsp;回复&nbsp;<span class="time">05-08 01:49</span></p><p class="reply-content">哈哈，伪打脸来啦</p></li></ul></div></li></ul><div class="review-page-wrap" data-total="2" data-page-size="10" data-page-no="1"></div></div></main>
+<footer><p><span class="contact">微信公众号：baidu_ife</span><span class="contact">微博：<a target="_blank" href="http://weibo.com/u/5568860641?topnav=1&wvr=6&topsug=1">Baidu前端技术学院</a></span></p><p class="friend-link"><span class="note">友情链接</span><a target="_blank" title="百度EFE前端团队" href="http://efe.baidu.com">百度EFE</a><a target="_blank" href="http://voice.baidu.com">百度语音搜索</a><a href="http://www.chuanke.com/" target="_blank">百度传课</a><a target="_blank" href="http://campus.baidu.com/">百度校园</a><a target="_blank" href="http://talent.baidu.com/external/baidu/campus.html">百度校园招聘</a></p><p><span class="copyright-text"><span>©2016&nbsp;Baidu&nbsp;</span><a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span></span></p></footer></div><script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-4/esl.js"></script><script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script><script src="../../dep/EpicEditor-v0.2.2/js/epiceditor.js"></script><script>require.config({'baseUrl': '//ife.baidu.com/asset','paths': { 'bootstrapvalidator': '../dep/bootstrapvalidator/dist/js/bootstrapValidator' },'waitSeconds': 5,'packages': [{'name': 'etpl','location': '../dep/etpl/3.1.0/asset','main': 'main'},{'name': 'bootstrap','location': '../dep/bootstrap-3.3.5/js'},{'name': 'select2','location': '../dep/select2/dist/js','main': 'select2'},{'name': 'jquery-bootpag','location': '../dep/jquery-bootpag/lib','main': 'jquery.bootpag'},{'name': 'bootstrap-slider','location': '../dep/bootstrap-slider/asset/js','main': 'bootstrap-slider'},{'name': 'saber-emitter','location': '../dep/saber-emitter/1.0.0/asset','main': 'emitter'},{'name': 'marked','location': '../dep/marked/lib','main': 'marked'}],'shim': {'bootstrap/button': ['jquery'],'bootstrap/modal': ['jquery'],'bootstrap/collapse': ['jquery'],'bootstrap/dropdown': ['jquery'],'bootstrap/tab': ['jquery'],'bootstrapvalidator': ['jquery'],'jquery-bootpag/jquery.bootpag': ['jquery']}});</script>
+<script>
+    require(['review/reviewDetail_e5394537'], function (app) {
+        app.init({"login":0,"taskUrl":"\/task\/all","noteUrl":"\/note\/all","statisticUrl":"\/statistic\/index","loginUrl":"https:\/\/openapi.baidu.com\/oauth\/2.0\/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=2c63258fe7452c3b06d11491110773b3&display=page"}, {
+            taskId: 43,
+            workId: 9514,
+            groupId: 495,
+            allowAddReview: 0,
+            allowUpdateReview: 0        });
+    });
+</script>
+</body>
+</html>

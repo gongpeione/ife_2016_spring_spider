@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-sweb-app-capable" content="yes"><meta name="keywords" content="前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准"><meta name="description" content="百度前端技术学院"><link rel="shortcut icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="bookmark" href="/asset/img/favicon.ico" type="image/x-icon"><title>百度前端技术学院</title>
+<link href="//ife.baidu.com/asset/css/review/reviewDetail_ad83eb8a.css" rel="stylesheet">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d422e3cabaaaa7445e54622b97472bab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+</head><body class="result-op"><div id="viewport"><header ><nav class="navbar navbar-default container ife-header"><div class="row"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-brand ife-logo"><a href="//ife.baidu.com"><img src="/asset/img/logo.png"></a></div></div><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/task/all">任务</a></li><li><a href="/note/all">学习笔记</a></li><li><a href="/statistic/index">统计</a></li><li class="user-dropdown"><a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=59073a2cfd2e2a3674d5232d7f333663&display=page">登录</a></li></ul></div></div></nav></header>
+<main class="container review-detail-page"><div class="breadcrumb nav-title"><span class="active">任务五：零基础HTML及CSS编码（二）（<a href="/task/detail?taskId=5">查看详情</a>）</span></div><div class="main"><div class="submit-group-info"><h4>团队：<a href="/group/profile?groupId=2038" target="_blank">code matters</a></h4><p class="submit-basic"><span class="submit-time"><a href="/user/profile?userId=5320">彭君怡</a>&nbsp;更新于<em>03-22 16:13</em></span><span class="review-num">已经有<em>1</em>人 review</span><span class="score">平均得分：<em>8</em></span></p><p>代码地址：<a href="https://github.com/TeamCodeMatters/Baidu-IFE-task/blob/gh-pages/part1/Readme.md" target="_blank">https://github.com/TeamCodeMatters/Baidu-IFE-task/blob/gh-pages/part1/Readme.md</a></p><p>demo：<a href="http://teamcodematters.github.io/Baidu-IFE-task/part1/task05.html" target="_blank">http://teamcodematters.github.io/Baidu-IFE-task/part1/task05.html</a></p><p class="submit-descr">task05</p></div><ul class="review-result-list container-fluid"><li class="row review-result" data-id="667"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=2820" target="_blank">前端学习 fighting！</a><span class="time-info">review&nbsp;<span class="time">03-19 00:27</span><span class="update-time">（<a href="/user/profile?userId=7357" target="_blank">夏继业</a>&nbsp;03-19 00:27&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">8</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">整体效果棒棒哒~不过也有需要注意的地方：<br />
+<br />
+第一个就是这个任务说，需要把十张图片完全显示出来，如果是我们团队的话，就会尝试使用最小宽度进行限制，也许不是最好的，不过完成了任务目标。<br />
+<br />
+第二个就是之前任务留下来的，这个表单输入框里面的提示可以尝试使用placeholder 与pattern 属性。 <br />
+<br />
+我正在找方法实现让导航栏缩小之后不会很难看的方法，说不定等下能发现，一起加油~ 我们的代码很快就上传上去了，http://xjy1592922966.github.io/baidu/ 欢迎过来向我们提意见~</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=348><p class="reply-info">作者<a href="/user/profile?userId=5320">彭君怡</a>&nbsp;回复&nbsp;<span class="time">03-21 19:48</span></p><p class="reply-content">感谢review和提醒。考虑到过placeholder，我的队友们也跟我说过，但是对IE的支持还不好，我们觉得要么就全面兼容ie要么就果断放弃IE，我们觉得这个网页用到的技术IE不支持的还比较少，所以我们尽量去用兼容性的样式！，pattern不太熟，不过感谢提醒，我们去学习学习~导航栏缩小后可以改用响应式布局，专门给导航栏一个样式，下拉式的列表会比较好~~~不过我想这都不是这个任务所考察的重点吧~~</p></li></ul></div></li></ul><div class="review-page-wrap" data-total="1" data-page-size="10" data-page-no="1"></div></div></main>
+<footer><p><span class="contact">微信公众号：baidu_ife</span><span class="contact">微博：<a target="_blank" href="http://weibo.com/u/5568860641?topnav=1&wvr=6&topsug=1">Baidu前端技术学院</a></span></p><p class="friend-link"><span class="note">友情链接</span><a target="_blank" title="百度EFE前端团队" href="http://efe.baidu.com">百度EFE</a><a target="_blank" href="http://voice.baidu.com">百度语音搜索</a><a href="http://www.chuanke.com/" target="_blank">百度传课</a><a target="_blank" href="http://campus.baidu.com/">百度校园</a><a target="_blank" href="http://talent.baidu.com/external/baidu/campus.html">百度校园招聘</a></p><p><span class="copyright-text"><span>©2016&nbsp;Baidu&nbsp;</span><a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span></span></p></footer></div><script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-4/esl.js"></script><script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script><script src="../../dep/EpicEditor-v0.2.2/js/epiceditor.js"></script><script>require.config({'baseUrl': '//ife.baidu.com/asset','paths': { 'bootstrapvalidator': '../dep/bootstrapvalidator/dist/js/bootstrapValidator' },'waitSeconds': 5,'packages': [{'name': 'etpl','location': '../dep/etpl/3.1.0/asset','main': 'main'},{'name': 'bootstrap','location': '../dep/bootstrap-3.3.5/js'},{'name': 'select2','location': '../dep/select2/dist/js','main': 'select2'},{'name': 'jquery-bootpag','location': '../dep/jquery-bootpag/lib','main': 'jquery.bootpag'},{'name': 'bootstrap-slider','location': '../dep/bootstrap-slider/asset/js','main': 'bootstrap-slider'},{'name': 'saber-emitter','location': '../dep/saber-emitter/1.0.0/asset','main': 'emitter'},{'name': 'marked','location': '../dep/marked/lib','main': 'marked'}],'shim': {'bootstrap/button': ['jquery'],'bootstrap/modal': ['jquery'],'bootstrap/collapse': ['jquery'],'bootstrap/dropdown': ['jquery'],'bootstrap/tab': ['jquery'],'bootstrapvalidator': ['jquery'],'jquery-bootpag/jquery.bootpag': ['jquery']}});</script>
+<script>
+    require(['review/reviewDetail_e5394537'], function (app) {
+        app.init({"login":0,"taskUrl":"\/task\/all","noteUrl":"\/note\/all","statisticUrl":"\/statistic\/index","loginUrl":"https:\/\/openapi.baidu.com\/oauth\/2.0\/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=59073a2cfd2e2a3674d5232d7f333663&display=page"}, {
+            taskId: 5,
+            workId: 238,
+            groupId: 2038,
+            allowAddReview: 0,
+            allowUpdateReview: 0        });
+    });
+</script>
+</body>
+</html>

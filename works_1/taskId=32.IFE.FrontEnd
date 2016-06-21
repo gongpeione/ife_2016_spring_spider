@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-sweb-app-capable" content="yes"><meta name="keywords" content="前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准"><meta name="description" content="百度前端技术学院"><link rel="shortcut icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="bookmark" href="/asset/img/favicon.ico" type="image/x-icon"><title>百度前端技术学院</title>
+<link href="//ife.baidu.com/asset/css/review/reviewDetail_ad83eb8a.css" rel="stylesheet">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d422e3cabaaaa7445e54622b97472bab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+</head><body class="result-op"><div id="viewport"><header ><nav class="navbar navbar-default container ife-header"><div class="row"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-brand ife-logo"><a href="//ife.baidu.com"><img src="/asset/img/logo.png"></a></div></div><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/task/all">任务</a></li><li><a href="/note/all">学习笔记</a></li><li><a href="/statistic/index">统计</a></li><li class="user-dropdown"><a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=99a99390b0feee77ea33235fc4fdd791&display=page">登录</a></li></ul></div></div></nav></header>
+<main class="container review-detail-page"><div class="breadcrumb nav-title"><span class="active">任务三十二：表单（四）实现表单自动生成工厂（<a href="/task/detail?taskId=32">查看详情</a>）</span></div><div class="main"><div class="submit-group-info"><h4>团队：<a href="/group/profile?groupId=925" target="_blank">IFE.FrontEnd</a></h4><p class="submit-basic"><span class="submit-time"><a href="/user/profile?userId=2329">陈慕杰</a>&nbsp;更新于<em>04-28 10:34</em></span><span class="review-num">已经有<em>2</em>人 review</span><span class="score">平均得分：<em>6.5</em></span></p><p>代码地址：<a href="https://github.com/pcdqc/IFE.FrontEnd/tree/master/TeamIntro/public/task/task-32" target="_blank">https://github.com/pcdqc/IFE.FrontEnd/tree/master/TeamIntro/public/task/task-32</a></p><p>demo：<a href="http://ife-frontend.com/task/task-32/" target="_blank">http://ife-frontend.com/task/task-32/</a></p><p class="submit-descr">表单工厂插件/..</p></div><ul class="review-result-list container-fluid"><li class="row review-result" data-id="2238"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=236" target="_blank">前端手艺人</a><span class="time-info">review&nbsp;<span class="time">04-15 23:04</span><span class="update-time">（<a href="/user/profile?userId=986" target="_blank">刘菊萍</a>&nbsp;04-15 23:04&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">5</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">1 radio对应的文字，最好用label并且绑定，这样点击文字的时候也会选中<br />
+2 有的输入框focus时没有提示</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=916><p class="reply-info">作者<a href="/user/profile?userId=2329">陈慕杰</a>&nbsp;回复&nbsp;<span class="time">04-16 13:20</span></p><p class="reply-content">谢谢你的review~ <br />
+1是个好建议哈~<br />
+2的话是你没仔细看我html的配置吧，三种状态（focus输入，验证正确，验证错误）的提不提示，提示内容都是可配置的</p></li></ul></div></li><li class="row review-result" data-id="2039"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=202" target="_blank">We Are The World</a><span class="time-info">review&nbsp;<span class="time">04-09 16:03</span><span class="update-time">（<a href="/user/profile?userId=214" target="_blank">李言</a>&nbsp;04-09 16:03&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">8</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">水平不够，没资格评论代码风格，捡我能看懂的地方说吧，<br />
+尽量不要给让赋值表达式左值右值同名，虽然一个是属性一个是方法，容易弄混，可读性也差一点，相同问题的地方还有this that。<br />
+源码里面邮编的正则有点问题，<br />
+demo里面右边表单中的username会出现超过16个字符，但是弹出的提示却是默认提示。<br />
+QQ的正则应该还最多10位吧，最少这个不太弄清楚<br />
+正则写的很好，考虑的很深，目前发现的写的最好的。<br />
+暂时发现的就这些，如果有说错的请指出，先多谢提供这么好的思路和代码给我们。</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=818><p class="reply-info">作者<a href="/user/profile?userId=2329">陈慕杰</a>&nbsp;回复&nbsp;<span class="time">04-10 11:40</span></p><p class="reply-content">谢谢你的review~<br />
+左右同名那个倒无所谓啦, 不会混淆, 因为只是把传入的参数设置为属性，在内部调用里面就只用到属性的值了，传入参数也仅仅在构造对象的时候用到而已。<br />
+然后that是保存this指向用的，现在保存this不外乎就that和__this。<br />
+<br />
+还有demo右边表单的确是我的问题..不过是html设置插件的时候设置错了，因为插件验证是有顺序的，而account本身就带有长度验证，所以minLength和maxLength其实也没必要加上的，或者在设置验证规则时要把minLength和maxLength放在account前面。<br />
+正则我会修复的哈~ <br />
+再次谢谢你的review~~~</p></li></ul></div></li></ul><div class="review-page-wrap" data-total="2" data-page-size="10" data-page-no="1"></div></div></main>
+<footer><p><span class="contact">微信公众号：baidu_ife</span><span class="contact">微博：<a target="_blank" href="http://weibo.com/u/5568860641?topnav=1&wvr=6&topsug=1">Baidu前端技术学院</a></span></p><p class="friend-link"><span class="note">友情链接</span><a target="_blank" title="百度EFE前端团队" href="http://efe.baidu.com">百度EFE</a><a target="_blank" href="http://voice.baidu.com">百度语音搜索</a><a href="http://www.chuanke.com/" target="_blank">百度传课</a><a target="_blank" href="http://campus.baidu.com/">百度校园</a><a target="_blank" href="http://talent.baidu.com/external/baidu/campus.html">百度校园招聘</a></p><p><span class="copyright-text"><span>©2016&nbsp;Baidu&nbsp;</span><a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span></span></p></footer></div><script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-4/esl.js"></script><script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script><script src="../../dep/EpicEditor-v0.2.2/js/epiceditor.js"></script><script>require.config({'baseUrl': '//ife.baidu.com/asset','paths': { 'bootstrapvalidator': '../dep/bootstrapvalidator/dist/js/bootstrapValidator' },'waitSeconds': 5,'packages': [{'name': 'etpl','location': '../dep/etpl/3.1.0/asset','main': 'main'},{'name': 'bootstrap','location': '../dep/bootstrap-3.3.5/js'},{'name': 'select2','location': '../dep/select2/dist/js','main': 'select2'},{'name': 'jquery-bootpag','location': '../dep/jquery-bootpag/lib','main': 'jquery.bootpag'},{'name': 'bootstrap-slider','location': '../dep/bootstrap-slider/asset/js','main': 'bootstrap-slider'},{'name': 'saber-emitter','location': '../dep/saber-emitter/1.0.0/asset','main': 'emitter'},{'name': 'marked','location': '../dep/marked/lib','main': 'marked'}],'shim': {'bootstrap/button': ['jquery'],'bootstrap/modal': ['jquery'],'bootstrap/collapse': ['jquery'],'bootstrap/dropdown': ['jquery'],'bootstrap/tab': ['jquery'],'bootstrapvalidator': ['jquery'],'jquery-bootpag/jquery.bootpag': ['jquery']}});</script>
+<script>
+    require(['review/reviewDetail_e5394537'], function (app) {
+        app.init({"login":0,"taskUrl":"\/task\/all","noteUrl":"\/note\/all","statisticUrl":"\/statistic\/index","loginUrl":"https:\/\/openapi.baidu.com\/oauth\/2.0\/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=99a99390b0feee77ea33235fc4fdd791&display=page"}, {
+            taskId: 32,
+            workId: 5632,
+            groupId: 925,
+            allowAddReview: 0,
+            allowUpdateReview: 0        });
+    });
+</script>
+</body>
+</html>

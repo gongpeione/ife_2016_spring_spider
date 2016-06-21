@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-sweb-app-capable" content="yes"><meta name="keywords" content="前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准"><meta name="description" content="百度前端技术学院"><link rel="shortcut icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="bookmark" href="/asset/img/favicon.ico" type="image/x-icon"><title>百度前端技术学院</title>
+<link href="//ife.baidu.com/asset/css/review/reviewDetail_ad83eb8a.css" rel="stylesheet">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d422e3cabaaaa7445e54622b97472bab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+</head><body class="result-op"><div id="viewport"><header ><nav class="navbar navbar-default container ife-header"><div class="row"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-brand ife-logo"><a href="//ife.baidu.com"><img src="/asset/img/logo.png"></a></div></div><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/task/all">任务</a></li><li><a href="/note/all">学习笔记</a></li><li><a href="/statistic/index">统计</a></li><li class="user-dropdown"><a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=60eacc532e23dd8a8303261e8515630a&display=page">登录</a></li></ul></div></div></nav></header>
+<main class="container review-detail-page"><div class="breadcrumb nav-title"><span class="active">任务二十三：JavaScript和树（二）（<a href="/task/detail?taskId=23">查看详情</a>）</span></div><div class="main"><div class="submit-group-info"><h4>团队：<a href="/group/profile?groupId=1363" target="_blank">打怪升级</a></h4><p class="submit-basic"><span class="submit-time"><a href="/user/profile?userId=3456">孙广东</a>&nbsp;更新于<em>04-09 13:40</em></span><span class="review-num">已经有<em>3</em>人 review</span><span class="score">平均得分：<em>8.33</em></span></p><p>代码地址：<a href="https://github.com/buptFE/baidu_ife/blob/master/task2/23.html" target="_blank">https://github.com/buptFE/baidu_ife/blob/master/task2/23.html</a></p><p>demo：<a href="http://buptfe.github.io/baidu_ife/index.html" target="_blank">http://buptfe.github.io/baidu_ife/index.html</a></p></div><ul class="review-result-list container-fluid"><li class="row review-result" data-id="2072"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=483" target="_blank">Web@BD</a><span class="time-info">review&nbsp;<span class="time">04-11 12:03</span><span class="update-time">（<a href="/user/profile?userId=1489" target="_blank">陈静</a>&nbsp;05-22 14:59&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">9</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">你这个是把24的任务写到一起了，因为我还没写24，就评23的部分好了。<br />
+1.有一点特好，当前检索到的文本都会被标记出来，而不会再遍历下一个节点的时候被刷掉，这个正好是自己想要解决的问题，看了你的代码提供了一个思路。（目前自己尝试了下修改，还未解决。）<br />
+2.对于你的注释部分的那个问题。可能因为你操作的是节点，虽然可以遍历。但是是个伪数组，但是当你进行的还是DOM操作，你移除了那个节点，数组就不存在了。我自己也是半知一解，也不知道对不对。<br />
+3.任务要求基本除了“查询不到给出提示这点”都有完成，不过这是小问题。(之前打分确实高了。改下)</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=888><p class="reply-info"><a href="/user/profile?userId=10899">大家好我是冇</a>&nbsp;回复&nbsp;<span class="time">04-14 15:39</span></p><p class="reply-content">大哥，功能没完成你都给10分，让那些有点瑕疵只能拿5，6分的人情何以堪？</p></li></ul></div></li><li class="row review-result" data-id="2320"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=1836" target="_blank">对对队</a><span class="time-info">review&nbsp;<span class="time">04-18 18:07</span><span class="update-time">（<a href="/user/profile?userId=5932" target="_blank">冯洁</a>&nbsp;04-18 18:07&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">9</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">删除节点函数中的<br />
+            for (var i = 0; i &lt; length; i++) {<br />
+                nodes[0].parentNode.removeChild(nodes[0]);<br />
+            }<br />
+在删除有 嵌套关系的标签是 会抛异常</span></div></li><li class="row review-result" data-id="2202"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=4212" target="_blank">人帅组名长代码美如画</a><span class="time-info">review&nbsp;<span class="time">04-14 17:57</span><span class="update-time">（<a href="/user/profile?userId=10899" target="_blank">大家好我是冇</a>&nbsp;04-14 18:01&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">7</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">代码结构清晰，该有的注释也都ok，考虑了事件代理的兼容性。<br />
+由于查询结果没按要求提示，按规定给3分太难看，给个7分。<br />
+另外注释中提到的疑问，我解答一下：<br />
+getElementsByClassName获得的结果是一个nodelist，类似于数组，但它具有动态属性的，每次操作节点之后，nodelist会同步更新。</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=1107><p class="reply-info"><a href="/user/profile?userId=1489">陈静</a>&nbsp;回复&nbsp;<span class="time">05-22 15:00</span></p><p class="reply-content">刚刚看你的那个回复。我那个之前分确实给高了。（不过开始的时候是由于之前排名更高的一些代码完成度比这个更低，为了让更多人看到这个代码而已）。<br />
+算了，还是谢谢提醒了。</p></li></ul></div></li></ul><div class="review-page-wrap" data-total="3" data-page-size="10" data-page-no="1"></div></div></main>
+<footer><p><span class="contact">微信公众号：baidu_ife</span><span class="contact">微博：<a target="_blank" href="http://weibo.com/u/5568860641?topnav=1&wvr=6&topsug=1">Baidu前端技术学院</a></span></p><p class="friend-link"><span class="note">友情链接</span><a target="_blank" title="百度EFE前端团队" href="http://efe.baidu.com">百度EFE</a><a target="_blank" href="http://voice.baidu.com">百度语音搜索</a><a href="http://www.chuanke.com/" target="_blank">百度传课</a><a target="_blank" href="http://campus.baidu.com/">百度校园</a><a target="_blank" href="http://talent.baidu.com/external/baidu/campus.html">百度校园招聘</a></p><p><span class="copyright-text"><span>©2016&nbsp;Baidu&nbsp;</span><a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span></span></p></footer></div><script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-4/esl.js"></script><script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script><script src="../../dep/EpicEditor-v0.2.2/js/epiceditor.js"></script><script>require.config({'baseUrl': '//ife.baidu.com/asset','paths': { 'bootstrapvalidator': '../dep/bootstrapvalidator/dist/js/bootstrapValidator' },'waitSeconds': 5,'packages': [{'name': 'etpl','location': '../dep/etpl/3.1.0/asset','main': 'main'},{'name': 'bootstrap','location': '../dep/bootstrap-3.3.5/js'},{'name': 'select2','location': '../dep/select2/dist/js','main': 'select2'},{'name': 'jquery-bootpag','location': '../dep/jquery-bootpag/lib','main': 'jquery.bootpag'},{'name': 'bootstrap-slider','location': '../dep/bootstrap-slider/asset/js','main': 'bootstrap-slider'},{'name': 'saber-emitter','location': '../dep/saber-emitter/1.0.0/asset','main': 'emitter'},{'name': 'marked','location': '../dep/marked/lib','main': 'marked'}],'shim': {'bootstrap/button': ['jquery'],'bootstrap/modal': ['jquery'],'bootstrap/collapse': ['jquery'],'bootstrap/dropdown': ['jquery'],'bootstrap/tab': ['jquery'],'bootstrapvalidator': ['jquery'],'jquery-bootpag/jquery.bootpag': ['jquery']}});</script>
+<script>
+    require(['review/reviewDetail_e5394537'], function (app) {
+        app.init({"login":0,"taskUrl":"\/task\/all","noteUrl":"\/note\/all","statisticUrl":"\/statistic\/index","loginUrl":"https:\/\/openapi.baidu.com\/oauth\/2.0\/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=60eacc532e23dd8a8303261e8515630a&display=page"}, {
+            taskId: 23,
+            workId: 8614,
+            groupId: 1363,
+            allowAddReview: 0,
+            allowUpdateReview: 0        });
+    });
+</script>
+</body>
+</html>

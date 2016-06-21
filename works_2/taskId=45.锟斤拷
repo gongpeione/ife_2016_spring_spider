@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-sweb-app-capable" content="yes"><meta name="keywords" content="前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准"><meta name="description" content="百度前端技术学院"><link rel="shortcut icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="bookmark" href="/asset/img/favicon.ico" type="image/x-icon"><title>百度前端技术学院</title>
+<link href="//ife.baidu.com/asset/css/review/reviewDetail_ad83eb8a.css" rel="stylesheet">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d422e3cabaaaa7445e54622b97472bab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+</head><body class="result-op"><div id="viewport"><header ><nav class="navbar navbar-default container ife-header"><div class="row"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-brand ife-logo"><a href="//ife.baidu.com"><img src="/asset/img/logo.png"></a></div></div><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/task/all">任务</a></li><li><a href="/note/all">学习笔记</a></li><li><a href="/statistic/index">统计</a></li><li class="user-dropdown"><a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=73509125b2c5bfe266c85c2780687aec&display=page">登录</a></li></ul></div></div></nav></header>
+<main class="container review-detail-page"><div class="breadcrumb nav-title"><span class="active">任务四十五：多功能相册之木桶布局（<a href="/task/detail?taskId=45">查看详情</a>）</span></div><div class="main"><div class="submit-group-info"><h4>团队：<a href="/group/profile?groupId=1304" target="_blank">锟斤拷</a></h4><p class="submit-basic"><span class="submit-time"><a href="/user/profile?userId=3310">丘翔</a>&nbsp;更新于<em>04-19 14:12</em></span><span class="review-num">已经有<em>5</em>人 review</span><span class="score">平均得分：<em>9.6</em></span></p><p>代码地址：<a href="https://github.com/qiuxiang/gallery/blob/master/src/scripts/gallery-rows.js" target="_blank">https://github.com/qiuxiang/gallery/blob/master/src/scripts/gallery-rows.js</a></p><p>demo：<a href="http://qiuxiang.qiniudn.com/gallery/views/gallery-rows.html" target="_blank">http://qiuxiang.qiniudn.com/gallery/views/gallery-rows.html</a></p><p class="submit-descr">图片源是 500px，用的是自己搭的图片接口服务器，源代码 https://github.com/qiuxiang/gallery-server.git。<br />
+<br />
+简单说下实现方法，首先，定一个行最小高度，如 300px，然后根据当前容器长度计算长宽比，得到 minAspectRatio。新加入的图片分别依次计算长宽比，并累加，一旦累加的长宽比大于 minAspectRatio，则之前累加的图片作为一行。<br />
+<br />
+欢迎 review、讨论。</p></div><ul class="review-result-list container-fluid"><li class="row review-result" data-id="2561"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=1122" target="_blank">学习小组</a><span class="time-info">review&nbsp;<span class="time">05-05 09:31</span><span class="update-time">（<a href="/user/profile?userId=2374" target="_blank">张伟</a>&nbsp;05-05 09:31&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">10</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">学习了，好厉害</span></div></li><li class="row review-result" data-id="2516"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=2038" target="_blank">code matters</a><span class="time-info">review&nbsp;<span class="time">05-01 10:17</span><span class="update-time">（<a href="/user/profile?userId=5320" target="_blank">彭君怡</a>&nbsp;05-01 10:17&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">10</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">换算图片宽高比的懂了，但是请问一下我动态抓取图片并且创建IMG的时候，图片的宽高往往都加载的慢得到的值都是0，百度了下一般都用img.onload获取，你们是通过什么方法获取每张图的宽高的呢？</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=1058><p class="reply-info">作者<a href="/user/profile?userId=3310">丘翔</a>&nbsp;回复&nbsp;<span class="time">05-02 11:49</span></p><p class="reply-content">长宽是由服务端接口提供的，load 事件虽然可以，但缺点在于必须等待图片加载。</p></li></ul></div></li><li class="row review-result" data-id="2465"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=1041" target="_blank">ZRLLL</a><span class="time-info">review&nbsp;<span class="time">04-26 17:21</span><span class="update-time">（<a href="/user/profile?userId=2590" target="_blank">宗维康</a>&nbsp;04-26 17:21&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">9</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">比如clientWidth为1500，那么按照300为高度，去换算图片的宽度，相加之和大于1500时（比如是1700），那么之前的图片作为一行，之后再300×（1500/1700）做为行高，对吧</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=1028><p class="reply-info">作者<a href="/user/profile?userId=3310">丘翔</a>&nbsp;回复&nbsp;<span class="time">04-26 21:06</span></p><p class="reply-content">是的</p></li></ul></div></li><li class="row review-result" data-id="2323"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=495" target="_blank">steel team</a><span class="time-info">review&nbsp;<span class="time">04-18 20:07</span><span class="update-time">（<a href="/user/profile?userId=1110" target="_blank">欧阳湘粤</a>&nbsp;04-18 20:07&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">10</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">实际上这次比赛的最核心的地方就是相互review<br />
+<br />
+虽然不能完全看懂你的代码，但是还是尽量想去多学些东西<br />
+<br />
+有些东西想问一下你：<br />
+<br />
+/**<br />
+ * 木桶布局<br />
+ * <br />
+ * @param {string} selector<br />
+ * @param {int} [minHeight=300]<br />
+ * @constructor<br />
+ */<br />
+<br />
+实现这种功能的是什么插件吗？<br />
+<br />
+<br />
+题外话：兄弟，其实虽然熊厂不社招了，你也可以选择鹅厂和阿里啊，75也很牛逼的</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=955><p class="reply-info">作者<a href="/user/profile?userId=3310">丘翔</a>&nbsp;回复&nbsp;<span class="time">04-19 00:59</span></p><p class="reply-content">我同意你的看法，我是很希望可以和大家一起讨论技术实现的优劣权衡，自己所想未必是最好的。<br />
+<br />
+/**<br />
+ * @constructor<br />
+ * @param {string} selector<br />
+ */<br />
+<br />
+这种不是什么功能，而是文档注释，规定注释按某种格式书写，方便自动化文档生产，具体参考 JSDoc（http://usejsdoc.org/）。我个人的主张是尽量少写文档注释以外的说明性注释，如果程序结构设计得很优秀，命名做到直观、统一，那么代码本身读起来就很流畅，这时候过多的注释反而显得啰嗦重复。<br />
+<br />
+好好看下 JSDoc 的说明，手打文档注释并不是问题，当然，好点的 IDE（如果是 sublime 之类的编辑器，应该也会有相应的插件，没有过多了解）会让你书写文档注释的时候更舒畅。<br />
+<br />
+然后聊到我为什么要参加这次的春季班，其实我是被朋友忽悠过来的……她说想要提升自己的前端水平，缺队友，一方面我想也想帮到她，另一方面，自己也可以练练手，就来了。结果直到现在，我做了不少题目，她自己却没做多少 (´Д` )</p></li></ul></div></li><li class="row review-result" data-id="2289"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=203" target="_blank">前端热爱者</a><span class="time-info">review&nbsp;<span class="time">04-17 18:54</span><span class="update-time">（<a href="/user/profile?userId=517" target="_blank">吴立宁</a>&nbsp;04-17 18:54&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">9</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">太强,只能膜拜一下<br />
+我题目一直没看懂,意思是高度相同的图片放到一行,并且只能放3-6个吗?,要是有几个特别的高的或者低的图片怎么办?<br />
+去看了你的源码,好高级,明显不是初学者,源码不容易看懂,比如你的photos是哪里来的,准备一个一个commit看,第一次commit就有个promise...</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=948><p class="reply-info"><a href="/user/profile?userId=517">吴立宁</a>&nbsp;回复&nbsp;<span class="time">04-18 15:30</span></p><p class="reply-content">谢谢你的回答</p></li><li class="reply" data-id=939><p class="reply-info">作者<a href="/user/profile?userId=3310">丘翔</a>&nbsp;回复&nbsp;<span class="time">04-17 20:55</span></p><p class="reply-content">我觉得木桶布局的要点不在于每行放多少张图片，而是尽量让每行高度差不多，比如我这里设定的 300px。如果理解为高度相同的图片放到一行就不对了，图片的顺序不应该被打乱。有一些图片宽高比特别高或特别低，无非就是在一行里多放或少放的问题。<br />
+<br />
+这里的代码主要用了 js 面向对象的写法，可以参考这里 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript。<br />
+<br />
+对于这个页面，我主要划分了3个模块，核心布局 GalleryRows 负责实现木桶布局，弹出层 Modal 负责实现大图的显示，应用层 Application 对各模块进行组织以及页面逻辑的实现。其中图片的获取在 Application 里进行调用，源代码是 utils.js 里的 getPhotos()，通过 ajax 方式获取某个图片分享平台的图片列表。<br />
+<br />
+不建议你看 commit……一方面这个项目是3个相册一起实现的，最初的 commit 还没开始做这个任务。另一方面，中间的过程我一直在思考和改进，代码结构也一直在变。<br />
+<br />
+promise 是更好地处理 js 回调的一种技术，在 es6 已经是标准模块，这个项目里使用的 promise 是我自己实现的一个简单版本。你可以自己查看相关资料了解 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise</p></li><li class="show-more"><button class="more-btn btn btn-link">显示全部（共<em>2</em>条评论）</button></li></ul></div></li></ul><div class="review-page-wrap" data-total="5" data-page-size="10" data-page-no="1"></div></div></main>
+<footer><p><span class="contact">微信公众号：baidu_ife</span><span class="contact">微博：<a target="_blank" href="http://weibo.com/u/5568860641?topnav=1&wvr=6&topsug=1">Baidu前端技术学院</a></span></p><p class="friend-link"><span class="note">友情链接</span><a target="_blank" title="百度EFE前端团队" href="http://efe.baidu.com">百度EFE</a><a target="_blank" href="http://voice.baidu.com">百度语音搜索</a><a href="http://www.chuanke.com/" target="_blank">百度传课</a><a target="_blank" href="http://campus.baidu.com/">百度校园</a><a target="_blank" href="http://talent.baidu.com/external/baidu/campus.html">百度校园招聘</a></p><p><span class="copyright-text"><span>©2016&nbsp;Baidu&nbsp;</span><a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span></span></p></footer></div><script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-4/esl.js"></script><script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script><script src="../../dep/EpicEditor-v0.2.2/js/epiceditor.js"></script><script>require.config({'baseUrl': '//ife.baidu.com/asset','paths': { 'bootstrapvalidator': '../dep/bootstrapvalidator/dist/js/bootstrapValidator' },'waitSeconds': 5,'packages': [{'name': 'etpl','location': '../dep/etpl/3.1.0/asset','main': 'main'},{'name': 'bootstrap','location': '../dep/bootstrap-3.3.5/js'},{'name': 'select2','location': '../dep/select2/dist/js','main': 'select2'},{'name': 'jquery-bootpag','location': '../dep/jquery-bootpag/lib','main': 'jquery.bootpag'},{'name': 'bootstrap-slider','location': '../dep/bootstrap-slider/asset/js','main': 'bootstrap-slider'},{'name': 'saber-emitter','location': '../dep/saber-emitter/1.0.0/asset','main': 'emitter'},{'name': 'marked','location': '../dep/marked/lib','main': 'marked'}],'shim': {'bootstrap/button': ['jquery'],'bootstrap/modal': ['jquery'],'bootstrap/collapse': ['jquery'],'bootstrap/dropdown': ['jquery'],'bootstrap/tab': ['jquery'],'bootstrapvalidator': ['jquery'],'jquery-bootpag/jquery.bootpag': ['jquery']}});</script>
+<script>
+    require(['review/reviewDetail_e5394537'], function (app) {
+        app.init({"login":0,"taskUrl":"\/task\/all","noteUrl":"\/note\/all","statisticUrl":"\/statistic\/index","loginUrl":"https:\/\/openapi.baidu.com\/oauth\/2.0\/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=73509125b2c5bfe266c85c2780687aec&display=page"}, {
+            taskId: 45,
+            workId: 9103,
+            groupId: 1304,
+            allowAddReview: 0,
+            allowUpdateReview: 0        });
+    });
+</script>
+</body>
+</html>

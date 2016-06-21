@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-sweb-app-capable" content="yes"><meta name="keywords" content="前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准"><meta name="description" content="百度前端技术学院"><link rel="shortcut icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="bookmark" href="/asset/img/favicon.ico" type="image/x-icon"><title>百度前端技术学院</title>
+<link href="//ife.baidu.com/asset/css/review/reviewDetail_ad83eb8a.css" rel="stylesheet">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d422e3cabaaaa7445e54622b97472bab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+</head><body class="result-op"><div id="viewport"><header ><nav class="navbar navbar-default container ife-header"><div class="row"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-brand ife-logo"><a href="//ife.baidu.com"><img src="/asset/img/logo.png"></a></div></div><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/task/all">任务</a></li><li><a href="/note/all">学习笔记</a></li><li><a href="/statistic/index">统计</a></li><li class="user-dropdown"><a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=46bb7db4276aab1edba9efd77c1b1714&display=page">登录</a></li></ul></div></div></nav></header>
+<main class="container review-detail-page"><div class="breadcrumb nav-title"><span class="active">任务三十六：听指令的小方块（四）（<a href="/task/detail?taskId=36">查看详情</a>）</span></div><div class="main"><div class="submit-group-info"><h4>团队：<a href="/group/profile?groupId=1304" target="_blank">锟斤拷</a></h4><p class="submit-basic"><span class="submit-time"><a href="/user/profile?userId=3310">丘翔</a>&nbsp;更新于<em>03-27 17:20</em></span><span class="review-num">已经有<em>31</em>人 review</span><span class="score">平均得分：<em>9.81</em></span></p><p>代码地址：<a href="https://github.com/qiuxiang/boxbot" target="_blank">https://github.com/qiuxiang/boxbot</a></p><p>demo：<a href="http://qiuxiang.github.io/boxbot/" target="_blank">http://qiuxiang.github.io/boxbot/</a></p><p class="submit-descr">在 Chrome、Firefox、Safari、IE11、Edge 中测试通过。可以用键盘方向键进行移动，空格键修墙。<br />
+<br />
+关于寻路算法：目前简单地用递归实现了深度优先搜索算法，接下来打算陆续实现各种寻路算法，为此，将搜索算法作为独立模块。<br />
+<br />
+关于指令回调与异常处理：每个指令的运行都有一定的时间间隔，并且可能会发生错误（比如尝试移动到一个非法的位置），如果想在每个指令调用成功或失败后进行一些操作，就需要有回调机制。为了很好地处理这些问题，于是引入了 Promise。<br />
+<br />
+关于指令的解析：参考 Web 后台框架（比如 Express）的路由实现，指令相当于路由规则，指令对应的动作就相当于 handler 或 controller，类似的，用正则表达式描述指令规则可以实现参数绑定以及更好的容错性。<br />
+<br />
+一个有趣的功能：机器人画图。选择图片文件后，程序会读取图片并生成绘图指令，运行命令就可以看到机器人一步一步地把图片绘制出来了！<br />
+<br />
+欢迎大家的 review、讨论！<br />
+<br />
+<br />
+// 2016-03-27 更新<br />
+实现简易版 Promise，兼容 IE11。</p></div><ul class="review-result-list container-fluid"><li class="row review-result" data-id="2500"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=2749" target="_blank">前端社区网团队</a><span class="time-info">review&nbsp;<span class="time">04-28 19:39</span><span class="update-time">（<a href="/user/profile?userId=5854" target="_blank">莫宇杰</a>&nbsp;04-29 00:04&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">9</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">这个有BUG的，因为他只寻路一次，写下了路径就一直走了，完全不管途中的变化，如果随机放一块砖堵了路，小人还是会穿过砖走的，这个应该改进一下！！<br />
+然后我玩了半天，还是给个9分，太厉害了！！</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=1059><p class="reply-info">作者<a href="/user/profile?userId=3310">丘翔</a>&nbsp;回复&nbsp;<span class="time">05-02 11:51</span></p><p class="reply-content">因为当前实现的寻路算法都是非动态的</p></li></ul></div></li><li class="row review-result" data-id="2361"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=3229" target="_blank">min</a><span class="time-info">review&nbsp;<span class="time">04-20 21:15</span><span class="update-time">（<a href="/user/profile?userId=8630" target="_blank">彭晨</a>&nbsp;04-21 20:28&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">9</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">发现一个bug，连续运行多个mov to会出问题，比如：<br />
+mov to 2,2<br />
+mov to 10,10<br />
+mov to 20,20<br />
+另外我觉得你的简易版Promise是有问题的，执行脚本后，第一行命令的回调函数根本不会执行，因为先运行boxbot.exec(code)，再挂载回调函数，执行第一行命令时回调函数还是空。所以，我觉得还不如直接往boxbot.exec(code)中传入回调函数方便些。</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=988><p class="reply-info">作者<a href="/user/profile?userId=3310">丘翔</a>&nbsp;回复&nbsp;<span class="time">04-23 02:36</span></p><p class="reply-content">哈哈，被发现了两个之前都不曾想到过的 bug。<br />
+<br />
+promise 的 bug 后来我在做新任务的时候发现了，解决办法是“0延时” setTimeout。<br />
+<br />
+mov to 的 bug 是因为考虑不周，已解决。</p></li></ul></div></li><li class="row review-result" data-id="2354"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=2758" target="_blank">南大三剑客</a><span class="time-info">review&nbsp;<span class="time">04-20 11:17</span><span class="update-time">（<a href="/user/profile?userId=6821" target="_blank">孟成林</a>&nbsp;04-20 11:17&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">10</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">我去，太厉害了</span></div></li><li class="row review-result" data-id="2319"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=2529" target="_blank">Go</a><span class="time-info">review&nbsp;<span class="time">04-18 17:59</span><span class="update-time">（<a href="/user/profile?userId=6772" target="_blank">孔阿栋</a>&nbsp;04-18 17:59&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">10</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">Orzzzzzz......同样表示玩了好久，等做到这个任务再来拜读大神的代码~~~</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=1108><p class="reply-info"><a href="/user/profile?userId=6772">孔阿栋</a>&nbsp;回复&nbsp;<span class="time">05-23 21:44</span></p><p class="reply-content">拜读了大神的代码，学习了代码封装，尝试实现了相同的功能，不过自己现在的能力还是不能全部看懂大神的代码。。。</p></li></ul></div></li><li class="row review-result" data-id="2313"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=2288" target="_blank">xtu</a><span class="time-info">review&nbsp;<span class="time">04-18 15:53</span><span class="update-time">（<a href="/user/profile?userId=6097" target="_blank">樊玉莹</a>&nbsp;04-18 15:53&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">10</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">大神，太厉害</span></div></li><li class="row review-result" data-id="2234"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=718" target="_blank">2+1</a><span class="time-info">review&nbsp;<span class="time">04-15 21:27</span><span class="update-time">（<a href="/user/profile?userId=1745" target="_blank">丘玉秀</a>&nbsp;04-15 21:27&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">10</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">厉害！！！</span></div></li><li class="row review-result" data-id="2013"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=3463" target="_blank">2233都是我的</a><span class="time-info">review&nbsp;<span class="time">04-08 15:55</span><span class="update-time">（<a href="/user/profile?userId=9169" target="_blank">兰洋</a>&nbsp;04-08 15:55&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">9</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">好玩</span></div></li><li class="row review-result" data-id="1939"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=1727" target="_blank">都是小白</a><span class="time-info">review&nbsp;<span class="time">04-06 16:55</span><span class="update-time">（<a href="/user/profile?userId=3125" target="_blank">牟伟</a>&nbsp;04-06 16:55&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">10</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">大神 你太厉害了！！！</span></div></li><li class="row review-result" data-id="1938"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=746" target="_blank">一起加油学前端</a><span class="time-info">review&nbsp;<span class="time">04-06 16:53</span><span class="update-time">（<a href="/user/profile?userId=1817" target="_blank">靳肖健</a>&nbsp;04-06 16:53&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">10</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">膜拜大神</span></div></li><li class="row review-result" data-id="1398"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=2166" target="_blank">PreWebDeveloper</a><span class="time-info">review&nbsp;<span class="time">03-27 17:23</span><span class="update-time">（<a href="/user/profile?userId=5593" target="_blank">陈志斌</a>&nbsp;04-06 13:45&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">10</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">在125%下的异常——完全无法移动（其他某些比例也有类似的情况）。。。。没仔细研究，但可以知道的一点是因为小数（目测移动的单位有问题）。。。。。对于高分屏而言是很正常的需求。。。。。<br />
+使用按键控制的时候，出现异常this.boxbot.run(...).catch is not a function。。。。<br />
+还有一个样式上的BUG——文本框可调大小与固定父组件大小之间的矛盾....<br />
+上传图片这一点做得非常棒。。<br />
+但是为啥不支持30x30。。。。</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=682><p class="reply-info">作者<a href="/user/profile?userId=3310">丘翔</a>&nbsp;回复&nbsp;<span class="time">04-01 16:31</span></p><p class="reply-content">30x30 的问题后来我发现了，因为你切换到 30x30 之后选了同一张图吧，我是监听 change 事件触发代码生成的，如果图片没变代码就不会变，后来我对这种情况优化了。<br />
+<br />
+计算偏差我大概能想到，是因为 div 和 td 的 display 属性不同导致 chrome 的计算存在差异。我后来对坐标计算结果取整就可以解决运行出错了，但要解决位置的偏差，要用 div 重写 table。</p></li><li class="reply" data-id=647><p class="reply-info"><a href="/user/profile?userId=5593">陈志斌</a>&nbsp;回复&nbsp;<span class="time">03-31 14:02</span></p><p class="reply-content">刚测试了一下,30x30没有问题,是我的操作姿势不对......<br />
+另外位置的话,确实自己维护坐标比较好--但是我还是不知道为啥就你的会偏移--其他作品,都是可以用的....应该是单位的问题--也许可以不用重写的--换句话说不解决这个问题,即使你内部维护一个坐标,最后到浏览器上显示的也是有偏移的</p></li><li class="reply" data-id=584><p class="reply-info">作者<a href="/user/profile?userId=3310">丘翔</a>&nbsp;回复&nbsp;<span class="time">03-28 21:44</span></p><p class="reply-content">我想起来了，之前用 ubuntu 对高分屏也是设置了浏览器缩放，这么说来，确实要重视下这个问题。<br />
+<br />
+移动的处理就是完全独立任何模块的，纯粹是设置 left 和 top，但我嫌麻烦没有维护内部坐标值，而是需要获取当前坐标的时候，根据 left 和 top 的值分别除以 clientWidth 和 clientHeight。所以，要解决这个问题，要么提高计算精确度（或者说降低敏感度），要么内部维护 x 和 y，避免依赖像素值计算。<br />
+<br />
+30x30 的问题。。我测试的是没问题的呀，还是不明白怎么不支持法，发生了什么错误？</p></li><li class="reply" data-id=580><p class="reply-info"><a href="/user/profile?userId=5593">陈志斌</a>&nbsp;回复&nbsp;<span class="time">03-28 21:21</span></p><p class="reply-content">另外Chrome125%是默认的——因为Chrome对HDPI的支持不好——尽管DPI调高了，但是并没有影响页面。。。。只能通过设置默认缩放来解决字太小的问题——相信在高分屏用chrome都有这个体验吧（加启动参数那个方法也是不完美的——包括插件栏图标显示异常。。。。所以只能用这个方法）（OSX下的Chrome貌似没有这个问题）</p></li><li class="reply" data-id=579><p class="reply-info"><a href="/user/profile?userId=5593">陈志斌</a>&nbsp;回复&nbsp;<span class="time">03-28 21:17</span></p><p class="reply-content">经测试——同样是125%缩放——chrome会出现异常——EDGE就没问题——话说你们可以把移动的处理分离开来。。<br />
+chrome出现的异常是无法移动到 [0.027027027027026973,1.027027027027027]<br />
+EDGE怎么缩放都没问题——貌似这个和chrome对HDPI的支持有关系，但是确实是个问题。。。<br />
+<br />
+还有我说的30x30是指不支持30x30的图片绘制。。。。</p></li><li class="reply" data-id=560><p class="reply-info">作者<a href="/user/profile?userId=3310">丘翔</a>&nbsp;回复&nbsp;<span class="time">03-27 18:57</span></p><p class="reply-content">感谢你的 review。<br />
+<br />
+对位置的判断依赖于像素的精确计算，桌面浏览器的缩放会破坏计算的准确性。<br />
+我并不觉得这是问题，因为高分屏是连像素一起缩放的，你觉得在高分屏下会出问题，是不对的，用手机试试就知道了。<br />
+<br />
+键盘控制异常是因为早上我自己实现了 Promise，但毕竟不是标准实现，和我之前用的标准接口有些出入，有些地方疏漏了没改过来，结果被你发现了 &gt;_&lt;，现已改正。<br />
+<br />
+textarea 默认是可调大小的，没怎么在意调整大小后可能会造成的样式 bug，现在设为 resize: none。<br />
+<br />
+没有不支持 30x30 吧，你那里具体出现了什么问题呢？</p></li><li class="show-more"><button class="more-btn btn btn-link">显示全部（共<em>6</em>条评论）</button></li></ul></div></li></ul><div class="review-page-wrap" data-total="31" data-page-size="10" data-page-no="1"></div></div></main>
+<footer><p><span class="contact">微信公众号：baidu_ife</span><span class="contact">微博：<a target="_blank" href="http://weibo.com/u/5568860641?topnav=1&wvr=6&topsug=1">Baidu前端技术学院</a></span></p><p class="friend-link"><span class="note">友情链接</span><a target="_blank" title="百度EFE前端团队" href="http://efe.baidu.com">百度EFE</a><a target="_blank" href="http://voice.baidu.com">百度语音搜索</a><a href="http://www.chuanke.com/" target="_blank">百度传课</a><a target="_blank" href="http://campus.baidu.com/">百度校园</a><a target="_blank" href="http://talent.baidu.com/external/baidu/campus.html">百度校园招聘</a></p><p><span class="copyright-text"><span>©2016&nbsp;Baidu&nbsp;</span><a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span></span></p></footer></div><script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-4/esl.js"></script><script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script><script src="../../dep/EpicEditor-v0.2.2/js/epiceditor.js"></script><script>require.config({'baseUrl': '//ife.baidu.com/asset','paths': { 'bootstrapvalidator': '../dep/bootstrapvalidator/dist/js/bootstrapValidator' },'waitSeconds': 5,'packages': [{'name': 'etpl','location': '../dep/etpl/3.1.0/asset','main': 'main'},{'name': 'bootstrap','location': '../dep/bootstrap-3.3.5/js'},{'name': 'select2','location': '../dep/select2/dist/js','main': 'select2'},{'name': 'jquery-bootpag','location': '../dep/jquery-bootpag/lib','main': 'jquery.bootpag'},{'name': 'bootstrap-slider','location': '../dep/bootstrap-slider/asset/js','main': 'bootstrap-slider'},{'name': 'saber-emitter','location': '../dep/saber-emitter/1.0.0/asset','main': 'emitter'},{'name': 'marked','location': '../dep/marked/lib','main': 'marked'}],'shim': {'bootstrap/button': ['jquery'],'bootstrap/modal': ['jquery'],'bootstrap/collapse': ['jquery'],'bootstrap/dropdown': ['jquery'],'bootstrap/tab': ['jquery'],'bootstrapvalidator': ['jquery'],'jquery-bootpag/jquery.bootpag': ['jquery']}});</script>
+<script>
+    require(['review/reviewDetail_e5394537'], function (app) {
+        app.init({"login":0,"taskUrl":"\/task\/all","noteUrl":"\/note\/all","statisticUrl":"\/statistic\/index","loginUrl":"https:\/\/openapi.baidu.com\/oauth\/2.0\/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=46bb7db4276aab1edba9efd77c1b1714&display=page"}, {
+            taskId: 36,
+            workId: 3660,
+            groupId: 1304,
+            allowAddReview: 0,
+            allowUpdateReview: 0        });
+    });
+</script>
+</body>
+</html>

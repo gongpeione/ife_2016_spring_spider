@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-sweb-app-capable" content="yes"><meta name="keywords" content="前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准"><meta name="description" content="百度前端技术学院"><link rel="shortcut icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="bookmark" href="/asset/img/favicon.ico" type="image/x-icon"><title>百度前端技术学院</title>
+<link href="//ife.baidu.com/asset/css/review/reviewDetail_ad83eb8a.css" rel="stylesheet">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d422e3cabaaaa7445e54622b97472bab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+</head><body class="result-op"><div id="viewport"><header ><nav class="navbar navbar-default container ife-header"><div class="row"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-brand ife-logo"><a href="//ife.baidu.com"><img src="/asset/img/logo.png"></a></div></div><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/task/all">任务</a></li><li><a href="/note/all">学习笔记</a></li><li><a href="/statistic/index">统计</a></li><li class="user-dropdown"><a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=401e7c57a218d68bba67882df4c1cba1&display=page">登录</a></li></ul></div></div></nav></header>
+<main class="container review-detail-page"><div class="breadcrumb nav-title"><span class="active">任务四十四：多功能相册之瀑布布局（<a href="/task/detail?taskId=44">查看详情</a>）</span></div><div class="main"><div class="submit-group-info"><h4>团队：<a href="/group/profile?groupId=925" target="_blank">IFE.FrontEnd</a></h4><p class="submit-basic"><span class="submit-time"><a href="/user/profile?userId=2329">陈慕杰</a>&nbsp;更新于<em>05-06 13:55</em></span><span class="review-num">已经有<em>3</em>人 review</span><span class="score">平均得分：<em>8.67</em></span></p><p>代码地址：<a href="https://github.com/pcdqc/IFE.FrontEnd/tree/master/TeamIntro/public/task/task-44/" target="_blank">https://github.com/pcdqc/IFE.FrontEnd/tree/master/TeamIntro/public/task/task-44/</a></p><p>demo：<a href="http://ife-frontend.com/task/task-44/" target="_blank">http://ife-frontend.com/task/task-44/</a></p><p class="submit-descr">###2016/4/25<br />
+增加了当容器宽度自适应时,  图片自适应浏览器缩放<br />
+ 增加响应式设置 &amp; 增加重置瀑布流列数接口<br />
+<br />
+JQuery瀑布流插件~<br />
+图片使用的是高清未压缩美图0.0 所以首次加载比较慢( 选得都是美cry的图，首屏大概10M)<br />
+<br />
+$(&#039;容器.class或#id&#039;).pinterest( option );<br />
+当option为空或者object对象时，形成瀑布流图片墙[ 图片的data-title=&quot;大标题&quot;  data-subtitle=&quot;小标题&quot; ]<br />
+object有三个属性可选：<br />
+line： 瀑布流列数( 默认 4列 )<br />
+gap： 瀑布流间距( 默认 15px间隔 )<br />
+width：图片宽度（一般不设置，图片宽度自动按容器宽度分配,当容器没设置宽度时,则按照页面宽度自动分配）<br />
+responsive:  响应式设置( 大尺寸优先原则, 读取顺序从后往前, 所以尽可能从大到小排序 )<br />
+Example:<br />
+responsive: [{  <br />
+            maxWidth: 1244,<br />
+            minWidth: 769,<br />
+            line: 3,<br />
+            gap: 10<br />
+        },{<br />
+            maxWidth: 768,<br />
+            line: 2,<br />
+            gap: 20<br />
+        },{<br />
+            maxWidth: 400,<br />
+            line: 1,<br />
+            gap: 25<br />
+        }]<br />
+  }<br />
+<br />
+当option为‘add’时,可再传入3个参数<br />
+分别是&quot;src&quot;图片路径, &quot;大标题&quot;, &quot;小标题&quot; [标题为可选]<br />
+<br />
+为&quot;remove&quot;时为可传入一个number,删除图片的索引数字 （为空则删除全部图片）<br />
+<br />
+为&quot;reset&quot;时, 可传入两种类型[number, object]参数;  //[ num重新设置列数, object三种属性可选 {line, gap, width} ]<br />
+<br />
+增加完整图片可拖拽查看（全屏查看后仍可放大）~~<br />
+又更新了当全屏显示的图片已经是完整图片时,  不可再放大<br />
+欢迎提出你宝贵的建议~~~<br />
+已发布到我的github地址为   <br />
+https://github.com/NightCatSama/jQuery-Pinterest</p></div><ul class="review-result-list container-fluid"><li class="row review-result" data-id="2204"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=1437" target="_blank">夜魇天辉</a><span class="time-info">review&nbsp;<span class="time">04-14 18:52</span><span class="update-time">（<a href="/user/profile?userId=2797" target="_blank">李应劼</a>&nbsp;04-14 18:53&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">9</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">做得好爽，mark一下，学习！</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=893><p class="reply-info">作者<a href="/user/profile?userId=2329">陈慕杰</a>&nbsp;回复&nbsp;<span class="time">04-14 20:09</span></p><p class="reply-content">谢谢review~ n(*≧▽≦*)n 可以下载下来试试三列或者五列或更多~</p></li></ul></div></li><li class="row review-result" data-id="2149"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=2166" target="_blank">PreWebDeveloper</a><span class="time-info">review&nbsp;<span class="time">04-13 08:32</span><span class="update-time">（<a href="/user/profile?userId=5593" target="_blank">陈志斌</a>&nbsp;04-14 15:53&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">9</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">应该是误会了.....<br />
+第一行写的这么暧昧谁不想歪--</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=889><p class="reply-info">作者<a href="/user/profile?userId=2329">陈慕杰</a>&nbsp;回复&nbsp;<span class="time">04-14 16:14</span></p><p class="reply-content">没关系, 原谅你了~</p></li><li class="reply" data-id=882><p class="reply-info"><a href="/user/profile?userId=7989">刘嘉航</a>&nbsp;回复&nbsp;<span class="time">04-14 10:54</span></p><p class="reply-content">心疼作者</p></li><li class="reply" data-id=870><p class="reply-info">作者<a href="/user/profile?userId=2329">陈慕杰</a>&nbsp;回复&nbsp;<span class="time">04-13 18:15</span></p><p class="reply-content">被1分支配的心理阴影...</p></li><li class="reply" data-id=869><p class="reply-info"><a href="/user/profile?userId=3310">丘翔</a>&nbsp;回复&nbsp;<span class="time">04-13 16:45</span></p><p class="reply-content">确实是误会了</p></li><li class="reply" data-id=867><p class="reply-info"><a href="/user/profile?userId=1095">杨健</a>&nbsp;回复&nbsp;<span class="time">04-13 16:40</span></p><p class="reply-content">笑死</p></li><li class="reply" data-id=856><p class="reply-info">作者<a href="/user/profile?userId=2329">陈慕杰</a>&nbsp;回复&nbsp;<span class="time">04-13 08:36</span></p><p class="reply-content">卧槽!  哪里使用县城瀑布布局的库了,,我就用了JQuery而已呀, 那个是我自己写的阿喂!!!! (°ー°〃)</p></li><li class="show-more"><button class="more-btn btn btn-link">显示全部（共<em>6</em>条评论）</button></li></ul></div></li><li class="row review-result" data-id="2165"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=1273" target="_blank">yyqqhh</a><span class="time-info">review&nbsp;<span class="time">04-13 16:27</span><span class="update-time">（<a href="/user/profile?userId=3225" target="_blank">刘建环</a>&nbsp;04-13 16:27&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">8</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">已经实现的可算是很完美了啊，很多细节问题都注意到了。我说一下我在体验过程中的问题：就是可能会由于网速问题导致访问效果很差。因为图片加载相当慢。应该可以继续优化的。</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=868><p class="reply-info"><a href="/user/profile?userId=3310">丘翔</a>&nbsp;回复&nbsp;<span class="time">04-13 16:43</span></p><p class="reply-content">我是觉得，这里就没必要死抠图片加载了，因为任务的主题就无关加载优化。很显然，这里的图片加载慢很很大一定程度是因为服务器不在国内而已。</p></li><li class="reply" data-id=866><p class="reply-info">作者<a href="/user/profile?userId=2329">陈慕杰</a>&nbsp;回复&nbsp;<span class="time">04-13 16:33</span></p><p class="reply-content">谢谢review~ 为了表现能查看完整大图片， 所以都选了些蛮大的图片， 所以导致图片加载有点慢~~</p></li><li class="show-more"><button class="more-btn btn btn-link">显示全部（共<em>2</em>条评论）</button></li></ul></div></li></ul><div class="review-page-wrap" data-total="3" data-page-size="10" data-page-no="1"></div></div></main>
+<footer><p><span class="contact">微信公众号：baidu_ife</span><span class="contact">微博：<a target="_blank" href="http://weibo.com/u/5568860641?topnav=1&wvr=6&topsug=1">Baidu前端技术学院</a></span></p><p class="friend-link"><span class="note">友情链接</span><a target="_blank" title="百度EFE前端团队" href="http://efe.baidu.com">百度EFE</a><a target="_blank" href="http://voice.baidu.com">百度语音搜索</a><a href="http://www.chuanke.com/" target="_blank">百度传课</a><a target="_blank" href="http://campus.baidu.com/">百度校园</a><a target="_blank" href="http://talent.baidu.com/external/baidu/campus.html">百度校园招聘</a></p><p><span class="copyright-text"><span>©2016&nbsp;Baidu&nbsp;</span><a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span></span></p></footer></div><script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-4/esl.js"></script><script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script><script src="../../dep/EpicEditor-v0.2.2/js/epiceditor.js"></script><script>require.config({'baseUrl': '//ife.baidu.com/asset','paths': { 'bootstrapvalidator': '../dep/bootstrapvalidator/dist/js/bootstrapValidator' },'waitSeconds': 5,'packages': [{'name': 'etpl','location': '../dep/etpl/3.1.0/asset','main': 'main'},{'name': 'bootstrap','location': '../dep/bootstrap-3.3.5/js'},{'name': 'select2','location': '../dep/select2/dist/js','main': 'select2'},{'name': 'jquery-bootpag','location': '../dep/jquery-bootpag/lib','main': 'jquery.bootpag'},{'name': 'bootstrap-slider','location': '../dep/bootstrap-slider/asset/js','main': 'bootstrap-slider'},{'name': 'saber-emitter','location': '../dep/saber-emitter/1.0.0/asset','main': 'emitter'},{'name': 'marked','location': '../dep/marked/lib','main': 'marked'}],'shim': {'bootstrap/button': ['jquery'],'bootstrap/modal': ['jquery'],'bootstrap/collapse': ['jquery'],'bootstrap/dropdown': ['jquery'],'bootstrap/tab': ['jquery'],'bootstrapvalidator': ['jquery'],'jquery-bootpag/jquery.bootpag': ['jquery']}});</script>
+<script>
+    require(['review/reviewDetail_e5394537'], function (app) {
+        app.init({"login":0,"taskUrl":"\/task\/all","noteUrl":"\/note\/all","statisticUrl":"\/statistic\/index","loginUrl":"https:\/\/openapi.baidu.com\/oauth\/2.0\/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=401e7c57a218d68bba67882df4c1cba1&display=page"}, {
+            taskId: 44,
+            workId: 8914,
+            groupId: 925,
+            allowAddReview: 0,
+            allowUpdateReview: 0        });
+    });
+</script>
+</body>
+</html>

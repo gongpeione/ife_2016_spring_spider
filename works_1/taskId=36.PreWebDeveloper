@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-sweb-app-capable" content="yes"><meta name="keywords" content="前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准"><meta name="description" content="百度前端技术学院"><link rel="shortcut icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="bookmark" href="/asset/img/favicon.ico" type="image/x-icon"><title>百度前端技术学院</title>
+<link href="//ife.baidu.com/asset/css/review/reviewDetail_ad83eb8a.css" rel="stylesheet">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d422e3cabaaaa7445e54622b97472bab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+</head><body class="result-op"><div id="viewport"><header ><nav class="navbar navbar-default container ife-header"><div class="row"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-brand ife-logo"><a href="//ife.baidu.com"><img src="/asset/img/logo.png"></a></div></div><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/task/all">任务</a></li><li><a href="/note/all">学习笔记</a></li><li><a href="/statistic/index">统计</a></li><li class="user-dropdown"><a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=b6a75848278dbb8889c22587b61156c9&display=page">登录</a></li></ul></div></div></nav></header>
+<main class="container review-detail-page"><div class="breadcrumb nav-title"><span class="active">任务三十六：听指令的小方块（四）（<a href="/task/detail?taskId=36">查看详情</a>）</span></div><div class="main"><div class="submit-group-info"><h4>团队：<a href="/group/profile?groupId=2166" target="_blank">PreWebDeveloper</a></h4><p class="submit-basic"><span class="submit-time"><a href="/user/profile?userId=5593">陈志斌</a>&nbsp;更新于<em>03-28 13:37</em></span><span class="review-num">已经有<em>2</em>人 review</span><span class="score">平均得分：<em>9.5</em></span></p><p>代码地址：<a href="https://github.com/codehz/commandblock" target="_blank">https://github.com/codehz/commandblock</a></p><p>demo：<a href="http://codehz.github.io/commandblock/" target="_blank">http://codehz.github.io/commandblock/</a></p><p class="submit-descr">（前排提示，要开启寻路功能请往下翻）<br />
+由于大量使用ES6特性，目前浏览兼容性堪忧。。。已知IE全挂，EDGE也挂，仅有Chrome可用。。。待会试试用babel<br />
+首先，这是一个图灵完备的强类型动态类型检测的函数式编程语言实现。<br />
+实现了大多数高级语言应该有的基本特性<br />
+有变量，函数的概念<br />
+还有数据类型和引用<br />
+所有指令和数据类型可以在js源码1707行后看到（如果我没添加新东西的话）<br />
+引用实际上只是名字引用——在作用域范围进行引用——由于本作用域实现的特殊性，这个方式工作的很好。<br />
+引用使用REF加名字表示，比如NUM REF T就表示引用T变量，左侧的类型不影响引用的类型，因此有一个特殊类型ANY专用于引用变量<br />
+指令可以用换行分隔，也可以用;分割，甚至支持空格<br />
+基本数据类型有整数NUM 34表示字面量34<br />
+还有就是坐标POINT 3,4表示(3,4)坐标<br />
+以及相对方向(relativedirection)和绝对方向(absolutedirection)——就是枚举类型——相对的就是LEFT RIGHT BACK绝对的就是LEFT RIGHT TOP BOTTOM<br />
+还有数组ARRAY EMPTY表示初始化一个空白数组<br />
+还有映射MAP EMPTY表示初始化一个空白映射，后面会讲到关于这两个数据类型的专用指令<br />
+还有颜色COLOR 0f0表示绿色，目前尚未编写颜色相关的分解组合指令<br />
+<br />
+指令<br />
+GO [数字参数]（*参数表明不用包含类型说明符，可以直接跟引用或者字面量）向前移动指定距离，留空表示1<br />
+TURN|TUN 相对方向参数 转向指定方向<br />
+TRAN|TRA 绝对方向参数 [数字参数] 向指定方向平移（支持负数哦）<br />
+MOVE|MOV 绝对方向参数 [数字参数] 向指定方向移动，顺便改动朝向（不能正确处理负数参数）<br />
+BUILD 正前方建造一个墙失败会输出<br />
+BRUSH 颜色参数 把正前方墙的颜色修改为指定颜色（颜色不包含#。。。）<br />
+DEFINE 名字 字面量 在变量栈顶部注册一个变量，用字面量初始化<br />
+UNDEFINE 名字 删除指定变量<br />
+FUNCTION|FUNC 参数1类型 参数1名字 参数2类型 参数2名字 PEND 代码块参数 创建一个函数<br />
+CALL 函数名字 参数1 参数2 ... 调用指定函数<br />
+THROW &lt;文本&gt; 抛出异常<br />
+BLOCK ... END 代码块<br />
+IF 条件块参数 正面执行块参数 负面执行块参数<br />
+LOOP 条件块参数 循环体块参数<br />
+RETURN 指令 将指定指令的完成属性修改为真<br />
+CALCULATE|CALC 运算符 操作数参数 操作数参数<br />
+ASSIGN 名字 指令 将指定指令的执行结果赋值给指定名字的变量<br />
+VALUE|VAL 数据 将数据变为指令<br />
+SPLIT 横坐标 纵坐标 点参数 将点分解为两坐标分别存放至指定名字的变量<br />
+COMPOSE 点名字 横坐标参数 纵坐标参数 上述指令的逆<br />
+ARRAY 操作 ——详见源代码<br />
+MAP 操作 ——详见源代码<br />
+INFO X 获取地图的指定数据 X := w|h|wall<br />
+CURRENTPOSITION|CURPOS 获取当前的位置<br />
+CURRENTFACE|FACE 获取当前朝向（绝对方向）<br />
+FACETO 绝对方向参数 面向指定方向<br />
+TESTFOR 点参数 测试指定的点返回是否有效<br />
+GETNEIGHBORS 点参数 数组参数1 数组参数2 得到指定点周围有效的点（其中两个数组参数的元素是映射，规定其0元素为点坐标，两个数组参数分别表示已经探索过的点和已经加入探索列表的点）<br />
+BINDPATHFINDING 寻路函数名字 绑定指定函数为默认寻路算法，目前不支持MOV TO BY的语法<br />
+DEBUG 指令 调试指定指令的执行（其实就是输出指定指令的执行结果） DEBUG被设计为可以被整体替换为空来消除，不会影响结果<br />
+<br />
+这里的介绍还很不完善，大家可以参看我用这个语言写的一个寻路算法（深度优先搜索）<br />
+http://codehz.github.io/commandblock/DFS.txt &lt;&lt; -----------------------------启用寻路功能需要先复制这个网址里的内容到开头才行（直接加开头，然后后面就可以用MOVE TO的功能了）<br />
+<br />
+趣味功能：我认为写程序就是趣味功能——你们可以在其中编写各种程序<br />
+<br />
+简单的编程例子<br />
+FUNC GOBACK NUM X PEND<br />
+ TUN BACK GO REF X TUN BACK<br />
+END<br />
+CALL GOBACK 5;<br />
+向后走 X 步<br />
+DEF I NUM 11;<br />
+LOOP BUILD DEBUG ASSIGN I CALC DEC REF I END<br />
+ TRA RIGHT 1;<br />
+END<br />
+循环建造一面墙<br />
+DEF J NUM 10;<br />
+LOOP DEBUG ASSIGN J CALC DEC REF J END<br />
+ TRA BOT 1;<br />
+ DEF I NUM 10;<br />
+ LOOP BUILD DEBUG ASSIGN I CALC DEC REF I END<br />
+  TRA RIGHT 1;<br />
+ END<br />
+ TRA LEFT 9;<br />
+END<br />
+TUN LEFT;<br />
+DEF I NUM 9;<br />
+TRA RIGHT 1;<br />
+LOOP BUILD DEBUG ASSIGN I CALC DEC REF I END<br />
+ TRA RIGHT 1;<br />
+END<br />
+循环把整个地图填满</p></div><ul class="review-result-list container-fluid"><li class="row review-result" data-id="2531"><div class="review-user clearfix"><span class="pull-left"><span class="text-success">导师</span><span class="time-info">review&nbsp;<span class="time">05-02 16:14</span><span class="update-time">（05-02 16:14&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">9</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">赞，学习了~<br />
+html压缩在一行，代码可读性较差，js注释较少<br />
+另MOV TO 这个指令是不是木有支持哇，随机生成墙的时候随机算法是不是考虑去除已有墙更好？</span></div></li><li class="row review-result" data-id="1391"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=1304" target="_blank">锟斤拷</a><span class="time-info">review&nbsp;<span class="time">03-27 14:49</span><span class="update-time">（<a href="/user/profile?userId=3310" target="_blank">丘翔</a>&nbsp;03-27 14:49&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">10</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">AST 简直惊艳！</span></div></li></ul><div class="review-page-wrap" data-total="2" data-page-size="10" data-page-no="1"></div></div></main>
+<footer><p><span class="contact">微信公众号：baidu_ife</span><span class="contact">微博：<a target="_blank" href="http://weibo.com/u/5568860641?topnav=1&wvr=6&topsug=1">Baidu前端技术学院</a></span></p><p class="friend-link"><span class="note">友情链接</span><a target="_blank" title="百度EFE前端团队" href="http://efe.baidu.com">百度EFE</a><a target="_blank" href="http://voice.baidu.com">百度语音搜索</a><a href="http://www.chuanke.com/" target="_blank">百度传课</a><a target="_blank" href="http://campus.baidu.com/">百度校园</a><a target="_blank" href="http://talent.baidu.com/external/baidu/campus.html">百度校园招聘</a></p><p><span class="copyright-text"><span>©2016&nbsp;Baidu&nbsp;</span><a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span></span></p></footer></div><script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-4/esl.js"></script><script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script><script src="../../dep/EpicEditor-v0.2.2/js/epiceditor.js"></script><script>require.config({'baseUrl': '//ife.baidu.com/asset','paths': { 'bootstrapvalidator': '../dep/bootstrapvalidator/dist/js/bootstrapValidator' },'waitSeconds': 5,'packages': [{'name': 'etpl','location': '../dep/etpl/3.1.0/asset','main': 'main'},{'name': 'bootstrap','location': '../dep/bootstrap-3.3.5/js'},{'name': 'select2','location': '../dep/select2/dist/js','main': 'select2'},{'name': 'jquery-bootpag','location': '../dep/jquery-bootpag/lib','main': 'jquery.bootpag'},{'name': 'bootstrap-slider','location': '../dep/bootstrap-slider/asset/js','main': 'bootstrap-slider'},{'name': 'saber-emitter','location': '../dep/saber-emitter/1.0.0/asset','main': 'emitter'},{'name': 'marked','location': '../dep/marked/lib','main': 'marked'}],'shim': {'bootstrap/button': ['jquery'],'bootstrap/modal': ['jquery'],'bootstrap/collapse': ['jquery'],'bootstrap/dropdown': ['jquery'],'bootstrap/tab': ['jquery'],'bootstrapvalidator': ['jquery'],'jquery-bootpag/jquery.bootpag': ['jquery']}});</script>
+<script>
+    require(['review/reviewDetail_e5394537'], function (app) {
+        app.init({"login":0,"taskUrl":"\/task\/all","noteUrl":"\/note\/all","statisticUrl":"\/statistic\/index","loginUrl":"https:\/\/openapi.baidu.com\/oauth\/2.0\/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=b6a75848278dbb8889c22587b61156c9&display=page"}, {
+            taskId: 36,
+            workId: 4425,
+            groupId: 2166,
+            allowAddReview: 0,
+            allowUpdateReview: 0        });
+    });
+</script>
+</body>
+</html>

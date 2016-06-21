@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-sweb-app-capable" content="yes"><meta name="keywords" content="前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准"><meta name="description" content="百度前端技术学院"><link rel="shortcut icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="bookmark" href="/asset/img/favicon.ico" type="image/x-icon"><title>百度前端技术学院</title>
+<link href="//ife.baidu.com/asset/css/review/reviewDetail_ad83eb8a.css" rel="stylesheet">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d422e3cabaaaa7445e54622b97472bab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+</head><body class="result-op"><div id="viewport"><header ><nav class="navbar navbar-default container ife-header"><div class="row"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-brand ife-logo"><a href="//ife.baidu.com"><img src="/asset/img/logo.png"></a></div></div><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/task/all">任务</a></li><li><a href="/note/all">学习笔记</a></li><li><a href="/statistic/index">统计</a></li><li class="user-dropdown"><a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=ed7ff1e1397c63034c45098f302d947d&display=page">登录</a></li></ul></div></div></nav></header>
+<main class="container review-detail-page"><div class="breadcrumb nav-title"><span class="active">任务四十三：多功能相册之拼图布局（<a href="/task/detail?taskId=43">查看详情</a>）</span></div><div class="main"><div class="submit-group-info"><h4>团队：<a href="/group/profile?groupId=261" target="_blank">五个非洲人</a></h4><p class="submit-basic"><span class="submit-time"><a href="/user/profile?userId=99">李昕宇</a>&nbsp;更新于<em>04-13 20:10</em></span><span class="review-num">已经有<em>3</em>人 review</span><span class="score">平均得分：<em>8</em></span></p><p>代码地址：<a href="https://github.com/Five-African/task-stage3-final-submission/tree/gh-pages/task43" target="_blank">https://github.com/Five-African/task-stage3-final-submission/tree/gh-pages/task43</a></p><p>demo：<a href="http://five-african.github.io/task-stage3-final-submission/task43/" target="_blank">http://five-african.github.io/task-stage3-final-submission/task43/</a></p><p class="submit-descr">相对于已经交了的几组，兼容了FF，着重于CSS</p></div><ul class="review-result-list container-fluid"><li class="row review-result" data-id="2404"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=1461" target="_blank">xuteam</a><span class="time-info">review&nbsp;<span class="time">04-23 14:54</span><span class="update-time">（<a href="/user/profile?userId=659" target="_blank">马逸东</a>&nbsp;04-23 14:54&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">8</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">学习了。受启发我也用的CSS实现布局，但看楼主在三个图片和五个图片的布局中都用了JS改样式。CSS3有vw和vh的长度属性直接获取视口尺寸，这样可以让JS更纯粹。<br />
+<br />
+<br />
+欢迎review我们组的提交</span></div></li><li class="row review-result" data-id="2315"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=495" target="_blank">steel team</a><span class="time-info">review&nbsp;<span class="time">04-18 16:41</span><span class="update-time">（<a href="/user/profile?userId=1110" target="_blank">欧阳湘粤</a>&nbsp;04-18 16:41&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">8</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">基本实现效果，不足在于 下拉到底部无新的图片更新，而且整体布局无居中（算是鸡蛋里挑骨头了）<br />
+<br />
+steel team 希望邀请您来review 我们的code</span></div></li><li class="row review-result" data-id="2266"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=1304" target="_blank">锟斤拷</a><span class="time-info">review&nbsp;<span class="time">04-16 16:49</span><span class="update-time">（<a href="/user/profile?userId=3310" target="_blank">丘翔</a>&nbsp;04-18 00:52&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">8</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">总体来说做得很好，因为主要用 css 布局，js 就显得很简洁，赞一个。<br />
+<br />
+就拼图布局来说，用 css 是可以实现大部分布局的，我一开始也有考虑过要不要专注于 css。后来考虑到在我现有的知识下，有些布局还是必须用 js，同时我已经想到一个比较好的统一处理方式，就干脆用 js。<br />
+<br />
+关于 css 代码，值得一提的是用了很多 .album &gt; img:first-child:nth-last-child(n)，巧妙的对不同的 img 数量进行选择应用不同的布局。技巧是不错，但如果是我就会选择更简单的方法，根据不同的 img 数量加上不同的 class，如 3 个 img 就加上 .albim3，那么选择器就很好写了 .album3 &gt; img::nth-last-child(n)。<br />
+<br />
+就布局来说，这里实现得很好，但就图片的显示，却没有处理好。如何在一个固定区域内合理地显示一张图片可不是简单的问题。<br />
+<br />
+问题的关键在于，图片的宽高比和相框的宽高比往往是不一致的，如果强行设置图片的 width 和 height，会导致图片被拉伸，这可是图片显示的大忌。为了避免图片被拉伸，一般的做法是，对外层 div 设置 overflow: hidden，而图片本身只设置 width: 100%（图片宽高比小于相框） 或 height: 100%（图片宽高比大于相框），更完美的处理还要考虑怎么居中，而这些处理目前大都需要用 js 来完成。<br />
+<br />
+虽说 css3 已经有 object-fit: cover; 可以解决这一问题，但兼容性堪忧，目前最新的IE都是不支持的。眼下较好的方案是 bakcgound-size: cover; 著名的图片分享网站 Flickr 就是使用了这种方案。<br />
+<br />
+除了图片显示问题，相册库的封装性，也是值得讨论。<br />
+<br />
+Album 提供了两个初始化方法，init() 和 setUp()，仔细看了代码的实现，觉得这两个初始化方法不是很统一，同时也重复了一部分代码。<br />
+<br />
+不统一的地方在于，init 读取 data- 属性，而 setUp 通过参数传递，其实这两种方法都可以同时提供。<br />
+<br />
+重复的代码是：<br />
+width = node.dataset.width || node.clientWidth;<br />
+height = node.dataset.height || node.clientHeight;<br />
+node.style.width = width + &quot;px&quot;;<br />
+node.style.height = height + &quot;px&quot;;<br />
+fixWrongStyle(node, width, height);<br />
+其实这段代码可以再封装成一个函数，供 init 和 setUp 调用，但似乎由于上述提到的不统一，对代码复用造成了一些影响。</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=943><p class="reply-info"><a href="/user/profile?userId=3310">丘翔</a>&nbsp;回复&nbsp;<span class="time">04-18 00:52</span></p><p class="reply-content">我看错了，原来你们是用了 object-fix: cover 的，之前是在 IE 下看到的图片被压缩，以为你们没有考虑到这个问题。这样就不应该只给 7 分了。</p></li><li class="reply" data-id=942><p class="reply-info">作者<a href="/user/profile?userId=161">郭菁华</a>&nbsp;回复&nbsp;<span class="time">04-17 21:13</span></p><p class="reply-content">一开始就打算专注css，就有种一条道走到黑的感觉，不过还是被迫写了js的fix（笑）。没有使用不同的class来区别不同布局是因为我不喜欢在库中加入一些约定，使用class就意味着文档中就要提示用户在自己的代码注意不要破坏这些class，所以在可接受的牺牲范围内，选择了目前的方案。居中的问题当初确实考虑过使用background-size:cover，但是感觉使用background-image实现不如&lt;img/&gt;优雅（background-image元素在右键菜单中并不会被当作图片处理），而且题目的clip-path就不能ie、edge处理，所以忽略了ie，拥抱object-fit。js封装性的问题确实是个失误，错误地对外暴露了init()。</p></li><li class="show-more"><button class="more-btn btn btn-link">显示全部（共<em>2</em>条评论）</button></li></ul></div></li></ul><div class="review-page-wrap" data-total="3" data-page-size="10" data-page-no="1"></div></div></main>
+<footer><p><span class="contact">微信公众号：baidu_ife</span><span class="contact">微博：<a target="_blank" href="http://weibo.com/u/5568860641?topnav=1&wvr=6&topsug=1">Baidu前端技术学院</a></span></p><p class="friend-link"><span class="note">友情链接</span><a target="_blank" title="百度EFE前端团队" href="http://efe.baidu.com">百度EFE</a><a target="_blank" href="http://voice.baidu.com">百度语音搜索</a><a href="http://www.chuanke.com/" target="_blank">百度传课</a><a target="_blank" href="http://campus.baidu.com/">百度校园</a><a target="_blank" href="http://talent.baidu.com/external/baidu/campus.html">百度校园招聘</a></p><p><span class="copyright-text"><span>©2016&nbsp;Baidu&nbsp;</span><a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span></span></p></footer></div><script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-4/esl.js"></script><script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script><script src="../../dep/EpicEditor-v0.2.2/js/epiceditor.js"></script><script>require.config({'baseUrl': '//ife.baidu.com/asset','paths': { 'bootstrapvalidator': '../dep/bootstrapvalidator/dist/js/bootstrapValidator' },'waitSeconds': 5,'packages': [{'name': 'etpl','location': '../dep/etpl/3.1.0/asset','main': 'main'},{'name': 'bootstrap','location': '../dep/bootstrap-3.3.5/js'},{'name': 'select2','location': '../dep/select2/dist/js','main': 'select2'},{'name': 'jquery-bootpag','location': '../dep/jquery-bootpag/lib','main': 'jquery.bootpag'},{'name': 'bootstrap-slider','location': '../dep/bootstrap-slider/asset/js','main': 'bootstrap-slider'},{'name': 'saber-emitter','location': '../dep/saber-emitter/1.0.0/asset','main': 'emitter'},{'name': 'marked','location': '../dep/marked/lib','main': 'marked'}],'shim': {'bootstrap/button': ['jquery'],'bootstrap/modal': ['jquery'],'bootstrap/collapse': ['jquery'],'bootstrap/dropdown': ['jquery'],'bootstrap/tab': ['jquery'],'bootstrapvalidator': ['jquery'],'jquery-bootpag/jquery.bootpag': ['jquery']}});</script>
+<script>
+    require(['review/reviewDetail_e5394537'], function (app) {
+        app.init({"login":0,"taskUrl":"\/task\/all","noteUrl":"\/note\/all","statisticUrl":"\/statistic\/index","loginUrl":"https:\/\/openapi.baidu.com\/oauth\/2.0\/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=ed7ff1e1397c63034c45098f302d947d&display=page"}, {
+            taskId: 43,
+            workId: 9130,
+            groupId: 261,
+            allowAddReview: 0,
+            allowUpdateReview: 0        });
+    });
+</script>
+</body>
+</html>

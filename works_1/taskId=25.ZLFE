@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-sweb-app-capable" content="yes"><meta name="keywords" content="前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准"><meta name="description" content="百度前端技术学院"><link rel="shortcut icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="bookmark" href="/asset/img/favicon.ico" type="image/x-icon"><title>百度前端技术学院</title>
+<link href="//ife.baidu.com/asset/css/review/reviewDetail_ad83eb8a.css" rel="stylesheet">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d422e3cabaaaa7445e54622b97472bab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+</head><body class="result-op"><div id="viewport"><header ><nav class="navbar navbar-default container ife-header"><div class="row"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-brand ife-logo"><a href="//ife.baidu.com"><img src="/asset/img/logo.png"></a></div></div><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/task/all">任务</a></li><li><a href="/note/all">学习笔记</a></li><li><a href="/statistic/index">统计</a></li><li class="user-dropdown"><a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=9a790c464f2bd92498f95b6e8995fcdb&display=page">登录</a></li></ul></div></div></nav></header>
+<main class="container review-detail-page"><div class="breadcrumb nav-title"><span class="active">任务二十五：JavaScript和树（四）（<a href="/task/detail?taskId=25">查看详情</a>）</span></div><div class="main"><div class="submit-group-info"><h4>团队：<a href="/group/profile?groupId=1572" target="_blank">ZLFE</a></h4><p class="submit-basic"><span class="submit-time"><a href="/user/profile?userId=3367">刘彬德</a>&nbsp;更新于<em>04-02 11:15</em></span><span class="review-num">已经有<em>4</em>人 review</span><span class="score">平均得分：<em>8.25</em></span></p><p>代码地址：<a href="https://github.com/hit-zlfe/task2/tree/master/25" target="_blank">https://github.com/hit-zlfe/task2/tree/master/25</a></p><p>demo：<a href="http://hit-zlfe.github.io/zlfe-page/demos/task2/25/index.html" target="_blank">http://hit-zlfe.github.io/zlfe-page/demos/task2/25/index.html</a></p><p class="submit-descr">模拟了一下系统的文件操作，添加了右键功能</p></div><ul class="review-result-list container-fluid"><li class="row review-result" data-id="1949"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=3915" target="_blank">KB310</a><span class="time-info">review&nbsp;<span class="time">04-06 21:47</span><span class="update-time">（<a href="/user/profile?userId=9324" target="_blank">谌薇</a>&nbsp;04-06 21:47&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">8</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">挺好的</span></div></li><li class="row review-result" data-id="1934"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=1007" target="_blank">蜂窝槑</a><span class="time-info">review&nbsp;<span class="time">04-06 16:35</span><span class="update-time">（<a href="/user/profile?userId=2534" target="_blank">李玮</a>&nbsp;04-06 16:35&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">8</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">感觉整体效果不错，功能很新颖，细节上可以加强<br />
+蜂窝槑团队 欢迎你来review代码<br />
+提出宝贵的意见～ http://ife.baidu.com/review/detail?workId=8297</span></div></li><li class="row review-result" data-id="1895"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=211" target="_blank">进击的前端菜鸟</a><span class="time-info">review&nbsp;<span class="time">04-05 16:43</span><span class="update-time">（<a href="/user/profile?userId=535" target="_blank">李振唐</a>&nbsp;04-05 16:43&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">9</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">界面美观，功能丰富，善用CSS3效果，右键菜单十分好看，大写的赞。学习中~<br />
+一点小小的bug：搜索到结果展开显示以后，它的祖先结点图标没有变成展开的文件夹</span></div></li><li class="row review-result" data-id="1729"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=495" target="_blank">steel team</a><span class="time-info">review&nbsp;<span class="time">04-02 13:17</span><span class="update-time">（<a href="/user/profile?userId=1110" target="_blank">欧阳湘粤</a>&nbsp;04-02 13:17&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">8</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">能被工大的学长review 代码，辛苦也是值了哈哈<br />
+我一开始理解题目错了，以为是要模拟一个树系统，所以才构建了TreeNode<br />
+后来发现，完全使用原生的DOM树就可以搞定呀哈哈<br />
+<br />
+亮点： <br />
+1.实现了模糊查询<br />
+2.实现了重命名<br />
+3.点击结点高亮<br />
+4.深度遍历算法<br />
+<br />
+更多优化：<br />
+1.  81行 代码：event.target.tagName==(&quot;P&quot;||&quot;p&quot;) <br />
+[ 可以直接调用toLowerCase() 把tagName 转换为小写字母。]<br />
+<br />
+2.多处使用了 style.display 其实没有必要，  封一个 .active  和 .hidden 类就好了<br />
+[推荐一篇博文 http://imweb.io/topic/56841c864c44bcc56092e3fa ]<br />
+<br />
+3.24行 target.childNodes; 可以使用target.children 获取其下所有的子标签节点，这样就无需再判断node.tagName 是否存在了<br />
+<br />
+4.查找元素<br />
+如果要实现模糊查询，我可能会选择正则 例如：<br />
+<br />
+var find = &quot;吃了&quot;<br />
+var str = &quot;你今天按时吃了饭吗？&quot;;<br />
+var re = new RegExp( find , &quot;g&quot;);<br />
+console.log(re.test(str)); // true<br />
+<br />
+当然indexOf也挺好的，萝卜白菜各有所爱呗<br />
+<br />
+5. 帮定的 ontextMeau 事件 无法取消， 右键弹出的下拉列表应该是在document任何地方点击鼠标左键而消失的，这里有点小瑕疵<br />
+<br />
+6. 建议使用addEventListener 事件 <br />
+addEventListener 可以给一个结点绑定一个或者多个事件<br />
+还能设置事件捕获或遍历（不排除学长只是嫌addEventListener 长的可能哈哈）<br />
+<br />
+我没有研究过算法，所以深度优先遍历我可能不太懂，貌似这种方法肯定比我直接递归方法来前序遍历树要优，学长不嫌弃还请求教</span></div></li></ul><div class="review-page-wrap" data-total="4" data-page-size="10" data-page-no="1"></div></div></main>
+<footer><p><span class="contact">微信公众号：baidu_ife</span><span class="contact">微博：<a target="_blank" href="http://weibo.com/u/5568860641?topnav=1&wvr=6&topsug=1">Baidu前端技术学院</a></span></p><p class="friend-link"><span class="note">友情链接</span><a target="_blank" title="百度EFE前端团队" href="http://efe.baidu.com">百度EFE</a><a target="_blank" href="http://voice.baidu.com">百度语音搜索</a><a href="http://www.chuanke.com/" target="_blank">百度传课</a><a target="_blank" href="http://campus.baidu.com/">百度校园</a><a target="_blank" href="http://talent.baidu.com/external/baidu/campus.html">百度校园招聘</a></p><p><span class="copyright-text"><span>©2016&nbsp;Baidu&nbsp;</span><a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span></span></p></footer></div><script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-4/esl.js"></script><script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script><script src="../../dep/EpicEditor-v0.2.2/js/epiceditor.js"></script><script>require.config({'baseUrl': '//ife.baidu.com/asset','paths': { 'bootstrapvalidator': '../dep/bootstrapvalidator/dist/js/bootstrapValidator' },'waitSeconds': 5,'packages': [{'name': 'etpl','location': '../dep/etpl/3.1.0/asset','main': 'main'},{'name': 'bootstrap','location': '../dep/bootstrap-3.3.5/js'},{'name': 'select2','location': '../dep/select2/dist/js','main': 'select2'},{'name': 'jquery-bootpag','location': '../dep/jquery-bootpag/lib','main': 'jquery.bootpag'},{'name': 'bootstrap-slider','location': '../dep/bootstrap-slider/asset/js','main': 'bootstrap-slider'},{'name': 'saber-emitter','location': '../dep/saber-emitter/1.0.0/asset','main': 'emitter'},{'name': 'marked','location': '../dep/marked/lib','main': 'marked'}],'shim': {'bootstrap/button': ['jquery'],'bootstrap/modal': ['jquery'],'bootstrap/collapse': ['jquery'],'bootstrap/dropdown': ['jquery'],'bootstrap/tab': ['jquery'],'bootstrapvalidator': ['jquery'],'jquery-bootpag/jquery.bootpag': ['jquery']}});</script>
+<script>
+    require(['review/reviewDetail_e5394537'], function (app) {
+        app.init({"login":0,"taskUrl":"\/task\/all","noteUrl":"\/note\/all","statisticUrl":"\/statistic\/index","loginUrl":"https:\/\/openapi.baidu.com\/oauth\/2.0\/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=9a790c464f2bd92498f95b6e8995fcdb&display=page"}, {
+            taskId: 25,
+            workId: 6282,
+            groupId: 1572,
+            allowAddReview: 0,
+            allowUpdateReview: 0        });
+    });
+</script>
+</body>
+</html>
