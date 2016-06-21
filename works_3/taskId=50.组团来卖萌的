@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-sweb-app-capable" content="yes"><meta name="keywords" content="前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准"><meta name="description" content="百度前端技术学院"><link rel="shortcut icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="bookmark" href="/asset/img/favicon.ico" type="image/x-icon"><title>百度前端技术学院</title>
+<link href="//ife.baidu.com/asset/css/review/reviewDetail_ad83eb8a.css" rel="stylesheet">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d422e3cabaaaa7445e54622b97472bab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+</head><body class="result-op"><div id="viewport"><header ><nav class="navbar navbar-default container ife-header"><div class="row"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-brand ife-logo"><a href="//ife.baidu.com"><img src="/asset/img/logo.png"></a></div></div><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/task/all">任务</a></li><li><a href="/note/all">学习笔记</a></li><li><a href="/statistic/index">统计</a></li><li class="user-dropdown"><a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=25aeba6779c97fb826cc61fceb3b26f6&display=page">登录</a></li></ul></div></div></nav></header>
+<main class="container review-detail-page"><div class="breadcrumb nav-title"><span class="active">任务五十：微型调查问卷平台（<a href="/task/detail?taskId=50">查看详情</a>）</span></div><div class="main"><div class="submit-group-info"><h4>团队：<a href="/group/profile?groupId=137" target="_blank">组团来卖萌的</a></h4><p class="submit-basic"><span class="submit-time"><a href="/user/profile?userId=339">周天树</a>&nbsp;更新于<em>05-09 21:49</em></span><span class="review-num">已经有<em>3</em>人 review</span><span class="score">平均得分：<em>6</em></span></p><p>代码地址：<a href="https://github.com/hellozts4120/Micro-Questionnaire-RIA" target="_blank">https://github.com/hellozts4120/Micro-Questionnaire-RIA</a></p><p>demo：<a href="http://hellozts4120.github.io/Micro-Questionnaire-RIA/app/index.html#/" target="_blank">http://hellozts4120.github.io/Micro-Questionnaire-RIA/app/index.html#/</a></p><p class="submit-descr">代码在/app目录下，基本完成了所有需求，除了目前暂时还不能对每个问题的选项进行增/删/排序（主要是看设计稿里面没设计，因此在自己想实现的样式TAT）<br />
+Bug还是不少的，目前已知的有：<br />
+1）饼图有时候加载不出来，要手动刷新一次当前页面才行。<br />
+2）编辑界面最下方的两个按钮的交互不是很人性化。<br />
+3）移动端的体验较差。<br />
+其他未知，欢迎各位提出！<br />
+<br />
+这些bug和缺陷后面都会补上，目前的数据存储方法是localStorage，因为最近还有其他事，忙完之后如果有时间会用Node写个后端。除了日历插件是直接搬第三阶段的代码以外，其他代码基本和第三阶段的提交没什么关系了。本项目使用的框架和库有：Angular-1.x(1.4.7),  Angular-route,  FontAwesome, Echarts(因为自己实在是做不出漂亮的饼图TAT)<br />
+<br />
+最后，感谢百度的各位老师能给我这么一个练习自己前端水平的机会，我这个拙作只是抛砖引玉了，希望后面的各位都能提交出很厉害的作品 :D<br />
+<br />
+<br />
+5.9更新：最近抽空改了几个bug，然后需求基本全部弄完了。后端服务器本来打算用express + mongodb 搞的，结果写完后端代码，开始改前端的services.js和controller.js的时候发现掉坑了，因为之前用localStorage存数据的时候代码结构没规划好，造成加上后端代码以后controller里面出现了一大堆回调函数嵌套，看上去非常丑陋，然后自己懒癌发作+想写相册的任务，于是就暂时弃疗吧，尸体在/service/目录下。。。</p></div><ul class="review-result-list container-fluid"><li class="row review-result" data-id="2566"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=202" target="_blank">We Are The World</a><span class="time-info">review&nbsp;<span class="time">05-05 15:07</span><span class="update-time">（<a href="/user/profile?userId=309" target="_blank">徐智鹏</a>&nbsp;05-05 15:07&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">5</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">提几个细节的问题<br />
+1.已发布的问卷，用户不能查看问卷（作答不了）<br />
+2.首页复选框取消不了<br />
+3.echarts最好采用异步加载到页面上</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=1070><p class="reply-info">作者<a href="/user/profile?userId=339">周天树</a>&nbsp;回复&nbsp;<span class="time">05-05 19:59</span></p><p class="reply-content">感谢你的review~~<br />
+1的问题，我当时是参照设计图设计的按钮，既然这样不好的话，我考虑把样式改一改了。<br />
+2和3都是很好的建议，非常感谢！</p></li></ul></div></li><li class="row review-result" data-id="2558"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=1249" target="_blank">TEAM-SZ</a><span class="time-info">review&nbsp;<span class="time">05-04 20:42</span><span class="update-time">（<a href="/user/profile?userId=64" target="_blank">郭旭</a>&nbsp;05-04 20:42&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">8</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">一个bug：在新建问卷的页面，如果没有给出截止日期或者添加问题，就会返回前一个页面，而不是留在当前页面等待用户输入</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=1069><p class="reply-info">作者<a href="/user/profile?userId=339">周天树</a>&nbsp;回复&nbsp;<span class="time">05-04 23:30</span></p><p class="reply-content">对的TAT，这就是我说的(2)， angular-router用的还不是很熟，依然要继续学习一个。。。<br />
+感谢你的review~~</p></li></ul></div></li><li class="row review-result" data-id="2547"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=3964" target="_blank">BATCTO</a><span class="time-info">review&nbsp;<span class="time">05-04 08:17</span><span class="update-time">（<a href="/user/profile?userId=10312" target="_blank">郭江伟</a>&nbsp;05-04 08:17&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">5</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">题目复用之后，添加选项会导致两道题都变化。</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=1066><p class="reply-info">作者<a href="/user/profile?userId=339">周天树</a>&nbsp;回复&nbsp;<span class="time">05-04 10:43</span></p><p class="reply-content">感谢您的review，已debug，原bug是由于复用问题时我草率的使用了浅复制来拷贝原对象造成的。。。</p></li></ul></div></li></ul><div class="review-page-wrap" data-total="3" data-page-size="10" data-page-no="1"></div></div></main>
+<footer><p><span class="contact">微信公众号：baidu_ife</span><span class="contact">微博：<a target="_blank" href="http://weibo.com/u/5568860641?topnav=1&wvr=6&topsug=1">Baidu前端技术学院</a></span></p><p class="friend-link"><span class="note">友情链接</span><a target="_blank" title="百度EFE前端团队" href="http://efe.baidu.com">百度EFE</a><a target="_blank" href="http://voice.baidu.com">百度语音搜索</a><a href="http://www.chuanke.com/" target="_blank">百度传课</a><a target="_blank" href="http://campus.baidu.com/">百度校园</a><a target="_blank" href="http://talent.baidu.com/external/baidu/campus.html">百度校园招聘</a></p><p><span class="copyright-text"><span>©2016&nbsp;Baidu&nbsp;</span><a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span></span></p></footer></div><script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-4/esl.js"></script><script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script><script src="../../dep/EpicEditor-v0.2.2/js/epiceditor.js"></script><script>require.config({'baseUrl': '//ife.baidu.com/asset','paths': { 'bootstrapvalidator': '../dep/bootstrapvalidator/dist/js/bootstrapValidator' },'waitSeconds': 5,'packages': [{'name': 'etpl','location': '../dep/etpl/3.1.0/asset','main': 'main'},{'name': 'bootstrap','location': '../dep/bootstrap-3.3.5/js'},{'name': 'select2','location': '../dep/select2/dist/js','main': 'select2'},{'name': 'jquery-bootpag','location': '../dep/jquery-bootpag/lib','main': 'jquery.bootpag'},{'name': 'bootstrap-slider','location': '../dep/bootstrap-slider/asset/js','main': 'bootstrap-slider'},{'name': 'saber-emitter','location': '../dep/saber-emitter/1.0.0/asset','main': 'emitter'},{'name': 'marked','location': '../dep/marked/lib','main': 'marked'}],'shim': {'bootstrap/button': ['jquery'],'bootstrap/modal': ['jquery'],'bootstrap/collapse': ['jquery'],'bootstrap/dropdown': ['jquery'],'bootstrap/tab': ['jquery'],'bootstrapvalidator': ['jquery'],'jquery-bootpag/jquery.bootpag': ['jquery']}});</script>
+<script>
+    require(['review/reviewDetail_e5394537'], function (app) {
+        app.init({"login":0,"taskUrl":"\/task\/all","noteUrl":"\/note\/all","statisticUrl":"\/statistic\/index","loginUrl":"https:\/\/openapi.baidu.com\/oauth\/2.0\/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=25aeba6779c97fb826cc61fceb3b26f6&display=page"}, {
+            taskId: 50,
+            workId: 10930,
+            groupId: 137,
+            allowAddReview: 0,
+            allowUpdateReview: 0        });
+    });
+</script>
+</body>
+</html>

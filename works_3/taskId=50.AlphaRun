@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-sweb-app-capable" content="yes"><meta name="keywords" content="前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准"><meta name="description" content="百度前端技术学院"><link rel="shortcut icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="icon" href="/asset/img/favicon.ico" type="image/x-icon"><link rel="bookmark" href="/asset/img/favicon.ico" type="image/x-icon"><title>百度前端技术学院</title>
+<link href="//ife.baidu.com/asset/css/review/reviewDetail_ad83eb8a.css" rel="stylesheet">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d422e3cabaaaa7445e54622b97472bab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+</head><body class="result-op"><div id="viewport"><header ><nav class="navbar navbar-default container ife-header"><div class="row"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-brand ife-logo"><a href="//ife.baidu.com"><img src="/asset/img/logo.png"></a></div></div><div id="navbar" class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/task/all">任务</a></li><li><a href="/note/all">学习笔记</a></li><li><a href="/statistic/index">统计</a></li><li class="user-dropdown"><a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=528d6be8b4d0cd8d30deb51e29e972bb&display=page">登录</a></li></ul></div></div></nav></header>
+<main class="container review-detail-page"><div class="breadcrumb nav-title"><span class="active">任务五十：微型调查问卷平台（<a href="/task/detail?taskId=50">查看详情</a>）</span></div><div class="main"><div class="submit-group-info"><h4>团队：<a href="/group/profile?groupId=2628" target="_blank">AlphaRun</a></h4><p class="submit-basic"><span class="submit-time"><a href="/user/profile?userId=7019">颜适</a>&nbsp;更新于<em>05-14 23:51</em></span><span class="review-num">已经有<em>3</em>人 review</span><span class="score">平均得分：<em>8.33</em></span></p><p>代码地址：<a href="https://github.com/yenshih/ife/tree/master/2016_spring/task4-1" target="_blank">https://github.com/yenshih/ife/tree/master/2016_spring/task4-1</a></p><p>demo：<a href="http://yenshih.com/ife/2016_spring/task4-1/build/index.html" target="_blank">http://yenshih.com/ife/2016_spring/task4-1/build/index.html</a></p><p class="submit-descr">5-10<br />
+前两个提交的分别用了Vue和Angular，我就只好用React来实现啦【大雾<br />
+走了许多弯路，居然花了12天才完成。晚上会写篇文章总结一下，然后po在这里。<br />
+部分实现与设计稿有出入，我自己做了一些调整。<br />
+---<br />
+5-13<br />
+任务总结http://yenshih.com/2016/05/10/questionnaires/<br />
+---<br />
+5-14<br />
+前端入门之路https://www.zhihu.com/question/32314049/answer/100898227</p></div><ul class="review-result-list container-fluid"><li class="row review-result" data-id="2596"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=2038" target="_blank">code matters</a><span class="time-info">review&nbsp;<span class="time">05-13 15:29</span><span class="update-time">（<a href="/user/profile?userId=5320" target="_blank">彭君怡</a>&nbsp;05-13 15:29&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">9</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">你好，我也是打算用React写，看了你的DEMO感觉很棒，请问你们用的是什么方式去动态添加那些单选题，多选题的选项框？现在卡在这里了。。你们核心代码压缩了一直摸不清头绪。。。</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=1092><p class="reply-info">作者<a href="/user/profile?userId=7019">颜适</a>&nbsp;回复&nbsp;<span class="time">05-13 18:06</span></p><p class="reply-content">从阶段一开始就是一个人在写。那段是在Edit里。最好先看懂Redux吧。</p></li><li class="reply" data-id=1091><p class="reply-info"><a href="/user/profile?userId=5320">彭君怡</a>&nbsp;回复&nbsp;<span class="time">05-13 17:57</span></p><p class="reply-content">一个人写！NB！  我在想是不是要把新增的添加到一个数组里，然后遍历数组渲染。。  那个应该是放在Edit的jsx里吧？ 说实话看了半天没搞清思路 哎。。 看着看着又逛到你推荐的几个知乎和专栏里看了看。。 更懵了 绝望(っ °Д °;)っ</p></li><li class="reply" data-id=1090><p class="reply-info">作者<a href="/user/profile?userId=7019">颜适</a>&nbsp;回复&nbsp;<span class="time">05-13 17:17</span></p><p class="reply-content">去看src下的代码，没压缩的。就是加了个点击事件，修改了state再重新渲染输入框而已。以及我是一个人写的啊～</p></li><li class="show-more"><button class="more-btn btn btn-link">显示全部（共<em>3</em>条评论）</button></li></ul></div></li><li class="row review-result" data-id="2586"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=495" target="_blank">steel team</a><span class="time-info">review&nbsp;<span class="time">05-10 21:34</span><span class="update-time">（<a href="/user/profile?userId=1110" target="_blank">欧阳湘粤</a>&nbsp;05-10 21:37&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">8</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">虽然部分地方有BUG 但是已经做的挺不错的了<br />
+基本功能都实现了</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=1083><p class="reply-info"><a href="/user/profile?userId=1110">欧阳湘粤</a>&nbsp;回复&nbsp;<span class="time">05-10 21:37</span></p><p class="reply-content">我花14天，除了使用Sass 和 requireJS<br />
+从组件到框架 全部一个人手写...原生Js 1800行....<br />
+最后实在写不下去了...<br />
+截止前，考虑还是把烂尾的工程丢上去，让其他同学吸取教训T_T</p></li></ul></div></li><li class="row review-result" data-id="2585"><div class="review-user clearfix"><span class="pull-left"><a href="/group/profile?groupId=137" target="_blank">组团来卖萌的</a><span class="time-info">review&nbsp;<span class="time">05-10 18:33</span><span class="update-time">（<a href="/user/profile?userId=339" target="_blank">周天树</a>&nbsp;05-10 18:41&nbsp;更新）</span></span></span><span class="pull-right score-info"><span class="score text-success">8</span><span class="text-muted">分</span></span></div><div class="review-comment"><span class="comment">还在学习react，所以技术细节就没资格评论了TAT单纯从Demo体验评论吧。。。做的还是相当不错啊，而且因为是React，组件化程度肯定比我用Angular高到不知道哪里去了，以后项目维护起来也要方便的多。而且有些地方的交互体验很好，比如浮出层的弹出效果。。。<br />
+不过有几个小BUG:<br />
+ 1.主页面上的“时间”那里貌似有点问题，编辑完问卷之后时间并没有更新<br />
+ 2.编辑页面中，保存问卷和发布问卷的按钮点击事件还可待商榷，比如点击“保存问卷”以后，我个人是觉得应该直接返回主页比较恰当，然后点击“发布问卷”时的一些操作也还有点小问题，比如截止时间早于当前日期时也能成功发布，然后发布了之后首页的状态显示的是“已结束”。。。<br />
+<br />
+当然，我觉得这些都是小问题，debug起来肯定是快的，个人觉得做这个项目的过程中对框架的理解和运用的经验才是最重要的（逃<br />
+<br />
+BUG测试用例：新建问卷-&gt;不填截止时间直接发布问卷-&gt;点击“确认”</span><ul class="reply-wrap"><li class="reply"style="display:block;" data-id=1082><p class="reply-info">作者<a href="/user/profile?userId=7019">颜适</a>&nbsp;回复&nbsp;<span class="time">05-10 19:41</span></p><p class="reply-content">哈哈哈哈随便添加一个问题后发布的话有Bug！<br />
+在测试问卷合法性的函数里面，检查时间的getFullYear漏了加括号，而且这还不会报错！因为那样子返回的是一个函数，函数是true啊摔！<br />
+笑哭了，现在在上课传不了Github，回头改【顶锅盖逃</p></li><li class="reply" data-id=1081><p class="reply-info"><a href="/user/profile?userId=339">周天树</a>&nbsp;回复&nbsp;<span class="time">05-10 19:29</span></p><p class="reply-content">“时间”那里。。。好吧是我理解错误，你的“时间”那栏是截止时间，而我理解的是最后修改问卷的时间TAT。。。<br />
+测试样例我刚才又试了一下，还是一样，我是 新建问卷-&gt;随便添加一个问题-&gt;直接按“发布问卷”。。。如果你这样试了还是没问题那就无视我吧（逃</p></li><li class="reply" data-id=1080><p class="reply-info">作者<a href="/user/profile?userId=7019">颜适</a>&nbsp;回复&nbsp;<span class="time">05-10 18:49</span></p><p class="reply-content">补充一下，我测了一下你的样例，没有问题诶~<br />
+不填时间的话会弹出“请设置问卷截止日期”的呀TAT</p></li><li class="reply" data-id=1079><p class="reply-info">作者<a href="/user/profile?userId=7019">颜适</a>&nbsp;回复&nbsp;<span class="time">05-10 18:44</span></p><p class="reply-content">感谢Review。<br />
+时间那里应该是没有问题的，编辑完问卷如果不保存直接返回的话是会放弃编辑效果的。所以我打算在我的问卷那个按钮那里再加个弹出框，提示是否放弃当前编辑。<br />
+保存问卷那里我也觉得有些别扭，不知怎样改才好。我原本想直接返回的，但是你玩过Diablo2么……后来改成不返回了，交互却有些麻烦，又不能不提示用户已经保存了。当然，这一切都是设计师的锅【逃</p></li><li class="show-more"><button class="more-btn btn btn-link">显示全部（共<em>4</em>条评论）</button></li></ul></div></li></ul><div class="review-page-wrap" data-total="3" data-page-size="10" data-page-no="1"></div></div></main>
+<footer><p><span class="contact">微信公众号：baidu_ife</span><span class="contact">微博：<a target="_blank" href="http://weibo.com/u/5568860641?topnav=1&wvr=6&topsug=1">Baidu前端技术学院</a></span></p><p class="friend-link"><span class="note">友情链接</span><a target="_blank" title="百度EFE前端团队" href="http://efe.baidu.com">百度EFE</a><a target="_blank" href="http://voice.baidu.com">百度语音搜索</a><a href="http://www.chuanke.com/" target="_blank">百度传课</a><a target="_blank" href="http://campus.baidu.com/">百度校园</a><a target="_blank" href="http://talent.baidu.com/external/baidu/campus.html">百度校园招聘</a></p><p><span class="copyright-text"><span>©2016&nbsp;Baidu&nbsp;</span><a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;<span>京ICP证030173号&nbsp;</span></span></p></footer></div><script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-4/esl.js"></script><script src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1.10.2_d88366fd.js"></script><script src="../../dep/EpicEditor-v0.2.2/js/epiceditor.js"></script><script>require.config({'baseUrl': '//ife.baidu.com/asset','paths': { 'bootstrapvalidator': '../dep/bootstrapvalidator/dist/js/bootstrapValidator' },'waitSeconds': 5,'packages': [{'name': 'etpl','location': '../dep/etpl/3.1.0/asset','main': 'main'},{'name': 'bootstrap','location': '../dep/bootstrap-3.3.5/js'},{'name': 'select2','location': '../dep/select2/dist/js','main': 'select2'},{'name': 'jquery-bootpag','location': '../dep/jquery-bootpag/lib','main': 'jquery.bootpag'},{'name': 'bootstrap-slider','location': '../dep/bootstrap-slider/asset/js','main': 'bootstrap-slider'},{'name': 'saber-emitter','location': '../dep/saber-emitter/1.0.0/asset','main': 'emitter'},{'name': 'marked','location': '../dep/marked/lib','main': 'marked'}],'shim': {'bootstrap/button': ['jquery'],'bootstrap/modal': ['jquery'],'bootstrap/collapse': ['jquery'],'bootstrap/dropdown': ['jquery'],'bootstrap/tab': ['jquery'],'bootstrapvalidator': ['jquery'],'jquery-bootpag/jquery.bootpag': ['jquery']}});</script>
+<script>
+    require(['review/reviewDetail_e5394537'], function (app) {
+        app.init({"login":0,"taskUrl":"\/task\/all","noteUrl":"\/note\/all","statisticUrl":"\/statistic\/index","loginUrl":"https:\/\/openapi.baidu.com\/oauth\/2.0\/authorize?client_id=89XtMi6980UVMb5iMiRAL27g&response_type=code&redirect_uri=http%3A%2F%2Fife.baidu.com%2Flog%2Fin&scope=&state=528d6be8b4d0cd8d30deb51e29e972bb&display=page"}, {
+            taskId: 50,
+            workId: 11105,
+            groupId: 2628,
+            allowAddReview: 0,
+            allowUpdateReview: 0        });
+    });
+</script>
+</body>
+</html>
