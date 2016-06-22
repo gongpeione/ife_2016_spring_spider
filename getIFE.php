@@ -181,6 +181,99 @@ function getWork($stage = 0) {
 }
 
 
+/**
+ * 获取每个提交的任务中的Review
+ *
+ * @param int $stage 任务阶段
+ */
+function getReview($stage = 0) {
+    $base = 'http://ife.baidu.com/';
+    // 遍历获取任务内容
+    if (file_exists('./taskList')) {
+        $content = unserialize(file_get_contents('./taskList'));
+
+        //连接数据库
+        $db = connectDB();
+
+        $i = 1;
+        echo " - Stage " . $stage . " Start -\n\n";
+        foreach ($content[$stage] as $item) {
+            $filename = './works_' . $stage . '/' . explode('?', $item)[1];
+            $taskURL = $base . '/task/getDoneGroupRank?' . explode('?', $item)[1];
+            $task = json_decode(getData($taskURL, $filename))->data->groupList;
+
+            $taskID = explode('=', $item)[1];
+
+            echo " - Task " . $taskID . " Start -\n";
+            foreach ($task as $taskItem) {
+
+                $workID = explode('=', $taskItem->reviewUrl)[1];
+
+                // 获取提交的任务内容
+                $workContent = getData($base . $taskItem->reviewUrl, $filename . '.' . $taskItem->groupName);
+
+                preg_match("/<ul class=\"review-result-list container-fluid\">([\s\S]+)<div class=\"review-page-wrap\"/", $workContent, $tmp);
+                $workContent = explode('<li class="row review-result"', $tmp[1]);
+                unset($workContent[0]);
+
+                // Review
+                foreach ($workContent as $workItem) {
+
+                    preg_match("/<a href=\"\/group\/profile\?groupId=\d+\" target=\"_blank\">(.*?)<\/a>/", $workItem, $tmp);
+                    $data['team'] = $tmp[1];
+
+                    preg_match("/<a href=\"\/user\/profile\?userId=\d+\" target=\"_blank\">(.*?)<\/a>/", $workItem, $tmp);
+                    $data['user'] = $tmp[1];
+
+                    preg_match("/<span class=\"score text-success\">(\d+)<\/span>/", $workItem, $tmp);
+                    $data['score'] = $tmp[1];
+
+                    preg_match("/<span class=\"time\">(.*?)<\/span>/", $workItem, $tmp);
+                    $data['time'] = @date('Y-m-d H:i:s', @strtotime('2016-' . $tmp[1]));
+
+                    preg_match("/<span class=\"comment\">([\s\S]+)<\/span>/", $workItem, $tmp);
+                    $data['comment'] = $tmp[1];
+
+                    $data['parent'] = 0;
+                    $data['work'] = $workID;
+
+                    print_r($data);
+
+                    $parentID = $db->insert('ife_review', $data);
+
+                    // Review回复
+                    preg_match("/<ul class=\"reply-wrap\">([\s\S]+)<\/ul>/", $workItem, $tmp);
+                    $workItemReply = explode('<li class="reply"', $tmp[1]);
+                    unset($workItemReply[0]);
+
+                    foreach ($workItemReply as $replyItem) {
+                        echo $replyItem;
+                        preg_match("/<a href=\"\/user\/profile\?userId=\d+\">(.*?)<\/a>/", $replyItem, $tmp);
+                        $reply['user'] = $tmp[1];
+
+                        preg_match("/<span class=\"time\">(.*?)<\/span>/", $replyItem, $tmp);
+                        $reply['time'] = @date('Y-m-d H:i:s', @strtotime('2016-' . $tmp[1]));
+
+                        preg_match("/<p class=\"reply-content\">([\s\S]+)<\/p>/", $replyItem, $tmp);
+                        print_r($tmp);
+                        $reply['comment'] = $tmp[1];
+
+                        $reply['parent'] = $parentID;
+                        print_r($reply);
+
+                        $db->insert('ife_review', $reply);
+                    }
+                    echo '[ ' . $i++ . ' ] Work ' . $workID . ' -> ' . ($db->error()[2] ? $db->error()[2] : 'Successful') . "\n";
+                }
+
+            }
+            echo " - Task " . $taskID . " End -\n\n";
+        }
+        echo " - Stage " . $stage . " End -\n\n";
+
+        return;
+    }
+}
 
 // 获取任务描述
 //getTask(0);
@@ -193,3 +286,9 @@ function getWork($stage = 0) {
 //getWork(2);
 //getWork(1);
 //getWork(0);
+
+// 获取Review
+//getReview(3);
+//getReview(2);
+//getReview(1);
+//getReview(0);
